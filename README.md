@@ -4,6 +4,8 @@
 
 Furni was presented on stage by [Bear Douglas](https://twitter.com/beardigsit) and [Romain Huet](https://twitter.com/romainhuet) at the [Twitter Flight conference](https://twitterflight.com/) in San Francisco on October 21st, 2015, to show off the power of the Fabric platform.
 
+![Screenshots of Furni for iOS](screenshot.png "Screenshots of Furni for iOS")
+
 ## Fabric
 
 Furni is a canonical sample iOS app created with [Fabric](https://get.fabric.io/), the tools you need to build the best apps.
