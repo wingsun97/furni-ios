@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0066BECC5CDF7646167B3B4E5CBB0614 /* STPCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 89943644F56B4C13F81F6C75C0F64801 /* STPCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00C1ADF88DA468AFAA8DDBD20DB16358 /* STPCheckoutInternalUIWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA812DB8306A3FF9826B263695D1EF42 /* STPCheckoutInternalUIWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		031A9F4916F390540E47E6B1C49B8FF3 /* STPColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5696D46E6EE0094A5D7986649CBEEB26 /* STPColorUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		040A09A6E05BCE0EF0DB75F7CE9D00D1 /* STPCheckoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E284F27DA0C4B9B2EF494764AFCD3EE /* STPCheckoutViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		031D3FCA93F79711A4FB08FB951A2CC0 /* STPToken.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E87EAB4B3224533C08A01EBC0F0D2 /* STPToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03ADF00D404FE2180078BCB2BC7CA497 /* STPCheckoutDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F11C91833808BF123C36D2C962FE5A62 /* STPCheckoutDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0474FD404374D52F69ADBD5C1081A793 /* STPPaymentCardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 12243222CC5F27ED15FC4BAE3520454F /* STPPaymentCardTextField.m */; };
 		04B6516591882595C6686479C6FF8225 /* AWSSynchronizedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0017F644670B160C4286B71F5C32F726 /* AWSSynchronizedMutableDictionary.m */; };
-		05F2840053F59CDCFE718E1992BA0A13 /* stp_card_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A173A69058E22E79ED891EB0F4E33D5D /* stp_card_discover@2x.png */; };
+		05D79400A3ABFE0E49545AC97229EC92 /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D48E95DC7A2997FC246B6C7C61DD3412 /* STPCard.m */; };
+		05F2840053F59CDCFE718E1992BA0A13 /* stp_card_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07777C50326ECC215B911E9DB3277B71 /* stp_card_discover@2x.png */; };
+		06C840C839693EEB7AA8489EB4B26943 /* STPBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AFECF5A4D955EF155B35DA6715D2D /* STPBankAccount.m */; };
 		074EA7AE63AEF7649F4EBB00D7B77923 /* AWSFMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E0E4B63F4197A30058D71CC27DF4BB /* AWSFMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		07A2B6CE9C463E053CB61B611BEAEE45 /* AWSSTSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 703DB057EA85DC94AFE0F5BA26A53BDE /* AWSSTSService.m */; };
 		09076D5153E4F462CC7DCEC7E399B12A /* AWSCognitoSyncResources.m in Sources */ = {isa = PBXBuildFile; fileRef = C7501535B91F3C0BF6FBD88F625F73D5 /* AWSCognitoSyncResources.m */; };
 		09E5C61EF54B0A35A916E8E46357D9AA /* AWSCognitoConflict.h in Headers */ = {isa = PBXBuildFile; fileRef = 68CB9746B4F3E465026E62A299AA3B1E /* AWSCognitoConflict.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A4089085F4FE94D7E69E9F5AF59A7A9 /* NSObject+AWSMTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA65F444356EB50B8613EDE97FEEEE5 /* NSObject+AWSMTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A7C0E6442B6DC6B12509AF7FC7033E0 /* STPPaymentCardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C299B42DF6DBE061797DD41ACA882F8 /* STPPaymentCardTextField.m */; };
 		0A81AF326C4EDEFA5246B01DECC7B35C /* AWSClientContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D40BC12DF8EEDFF2880BB021981ADB /* AWSClientContext.m */; };
 		0ACDBE14179B88D4F8FB7D9BB08265DF /* AWSMTLManagedObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B890FED79CCB18F008A6AEB5DAAAA2 /* AWSMTLManagedObjectAdapter.m */; };
 		0C5656B3E3EAEA9458705B224932C61F /* AWSmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4CF8D04A32417F315D79387D16BC96 /* AWSmetamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,161 +27,175 @@
 		0D8214D19C924602BC082A970F70CF92 /* AWSFMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A2B067FB5AF1C7C4DC934E9A1B7B /* AWSFMDatabaseAdditions.m */; };
 		0EFD1FF643346FF85C83679F659672CA /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D423DE1EF54DB6F95C388F6893FC4D10 /* Stream.swift */; };
 		0F46EE1E59585DCBF8308784978D1049 /* AWSSynchronizedMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0263DF150B46F9AF8DA79737D97ECFDB /* AWSSynchronizedMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FAF16EADB0C69638500A8AE691D69C1 /* StripeError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B86CF70C688863176D079A87B5D637F /* StripeError.m */; };
 		0FFB75FDAAC8BE306821C4EF3D998033 /* AWSLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B9FA4C34A48BDFE146F6C367AAD96 /* AWSLogging.m */; };
-		0FFEABEB724FA049817C740492C41B42 /* stp_card_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C74655BF7F9D9DF4B20D2CB5DBD699 /* stp_card_amex.png */; };
-		10777FB7606FA8EAFAC4DBA7F147973B /* stp_card_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6EA8677DC5357126DBE2B40EED691C /* stp_card_discover.png */; };
+		0FFEABEB724FA049817C740492C41B42 /* stp_card_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 92385551FB6FD219F698E03B7E60431E /* stp_card_amex.png */; };
+		10777FB7606FA8EAFAC4DBA7F147973B /* stp_card_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B877B632015BF972B2BA7A37015F605 /* stp_card_discover.png */; };
 		1191E80FCDF869555AAEB85DA6674BC0 /* AWSCognito-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55CAF26BD5F68AF311A332E8722C4C /* AWSCognito-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1542762AB3BF529758DB7E0DAAFBB476 /* STPFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B2F29CF5962C6D316657AE344A082 /* STPFormTextField.m */; };
-		1559B8D7D8F41C0013491A7BBD22C83F /* stp_card_mastercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA148536A97774F82AE9189F718B969 /* stp_card_mastercard@3x.png */; };
+		149D726C6E963171F0F39BAA4BD059E4 /* STPPaymentCardTextFieldViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE7417C228E8C3198CB0C69F6EADF6C /* STPPaymentCardTextFieldViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1559B8D7D8F41C0013491A7BBD22C83F /* stp_card_mastercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D43C367E04CE46950C1BB2716354F81C /* stp_card_mastercard@3x.png */; };
 		158855A27B81A632B07487261DD975B5 /* AWSURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EE8E9246B534B391C71C94DB29ECC0 /* AWSURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16C87627B3F9AD5BFFA79A6B88D413D0 /* stp_card_mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEBD7192BB0190F17247DD8AD9FAFD2 /* stp_card_mastercard@2x.png */; };
+		16C87627B3F9AD5BFFA79A6B88D413D0 /* stp_card_mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40477499378C3BAEF99234EAC17149BC /* stp_card_mastercard@2x.png */; };
 		177D1911C7075EAAE78F0318ACC06336 /* AWSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C93FA828AB1EF41890E97ED712CE5 /* AWSTask.m */; };
+		1862B82814C59A7DB6D131CD01E37282 /* PKPayment+Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8306FBCF0E45D3BF2DF8B1AB1EDDE /* PKPayment+Stripe.m */; };
 		18CB31A8231610958FF3E485392B7A52 /* AWSCognitoRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC53648DB02B126A2E8B7D7118820C /* AWSCognitoRecord.m */; };
-		19C4611240868E47F3B0882D13D00D69 /* Stripe+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4698EEE765574F61B0037825123C688C /* Stripe+ApplePay.m */; };
 		1A8B6E0CCFF946D42D4AD40F674C0A03 /* AWSCognitoHandlers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC2AB0EBAE2E1C5B7921D1A8D32B82B /* AWSCognitoHandlers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B21B4DD7927E698240A96A8E1AB721C /* AWSSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0DF4966B783F3F571536872F35BAA4 /* AWSSignature.m */; };
 		1B8AF865A75130C4D7EB661F17588B9F /* AWSXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC892D31F1A3DDD1060461865792F75C /* AWSXMLWriter.m */; };
-		1BF73BFC5B8EC3C1E3DA3B675F78116B /* STPBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = D03501E886CBBA08D1B9DECB9735DD7E /* STPBankAccount.m */; };
 		1EDD30045F28DD57255B221931B11017 /* AWSMTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B83D8A709505CE5F71CB9C0AEE7041 /* AWSMTLJSONAdapter.m */; };
 		203B77FA936BD0A09B5A62052F279F6D /* AWSEXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C5C2747243C7710A87FCBD2818B46A /* AWSEXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		215709ACD8C70AB65E701A86A8D92ED9 /* AWSCognitoService.h in Headers */ = {isa = PBXBuildFile; fileRef = 64826C61889647E9F0CC08FDEDA74D45 /* AWSCognitoService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		216EBD6B36B5DB28DFD08A5C78D9B872 /* AWSService.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D1E88A8316ED1E3C1C76C80D7F7490 /* AWSService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		218691829FDA8B84F1E7F071C85802AA /* STPCheckoutOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1ECA928AA7565481B65BF5FD25E574 /* STPCheckoutOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		236EE02C2876F23872E9568C4064EA7E /* AWSFMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A43B2BF2826C0D4A1399F27CC1A5DE /* AWSFMDatabaseQueue.m */; };
 		2437530700056A230A6EB57040195F88 /* AWSBolts.h in Headers */ = {isa = PBXBuildFile; fileRef = E056549B34D6896DE4C8F5426CD2B78C /* AWSBolts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		255BA411C127922E6B9FC139BDEE0B9E /* STPAPIClient+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 25DC749FDA0BEFB66EB0ABE3AE63F9B0 /* STPAPIClient+ApplePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26A2CED61BF6F5B2395EECE400DB3096 /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1CD25D447C3912A3D3556C5D481CA7 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2718BBDA9846C46B77112F9C03F53B91 /* STPPaymentCardTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DA321AE131FC83E67739996AD5E13D /* STPPaymentCardTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2839C15B18C6684A5F25D32FB957F7FE /* stp_card_jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = D50C2539848801AF36A3FC1C8F627D5C /* stp_card_jcb.png */; };
+		2839C15B18C6684A5F25D32FB957F7FE /* stp_card_jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 60929934B407438F74BC9466ABCEC934 /* stp_card_jcb.png */; };
 		285C71B01B27230DA8EE0BE7DACC83A5 /* AWSMTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 704D2E911D309F5523A7E3EE1761C845 /* AWSMTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28D5BCBFCBD0B66FD22BED221B05B139 /* stp_card_cvc_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 941DA5C31372F7C26CAA9F61DF8F25C7 /* stp_card_cvc_amex@3x.png */; };
+		28D5BCBFCBD0B66FD22BED221B05B139 /* stp_card_cvc_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97EF9C98F568FCE0E832F14F153811F5 /* stp_card_cvc_amex@3x.png */; };
 		2AA570D8556692EB9D23CA79E05D92BB /* AWSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0722C41EF49728685C2F35F6534C7C /* AWSService.m */; };
 		2C238995B665ED7EEC1A9160E2F03D0D /* AWSSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9460E3E175B44B389609CAF04DFF632A /* AWSSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C6241498C69B0F4750FA91DB6A95528 /* STPCheckoutInternalUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BA46659793199B91827BC9993A53AA /* STPCheckoutInternalUIWebViewController.m */; };
 		30A8F35FCAB29F5FBFC9F3F7E25A3B6B /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC208B627F3CE8EB3885440428269FE /* ServerTrustPolicy.swift */; };
+		30E05E9C1F53C67502358237C8AD3EE9 /* Stripe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1E487A9BADD6F63B0434BCE67368A2 /* Stripe-dummy.m */; };
 		314C1124056301D76D154165699A4151 /* AWSTMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A9713B8801A57225A23EE416C7C0939B /* AWSTMCache.m */; };
 		31841507E19F21CFB4293867DB5AC7C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231E7B11614157F2804003212E26D7EB /* UIKit.framework */; };
+		31C67FF2F2638D582AB5336C5F1147DB /* STPFormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = F3FC743C853EB8292206D839712D4063 /* STPFormTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		332964420A2E34981C26DC67F1FDBA49 /* AWSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAA5C986DCE18F8778AD22984B329B5 /* AWSNetworking.m */; };
 		3378E7B5F8E4C97478BA132001FDE940 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E10BD2132BA87FA9DFE594996E78 /* AWSCore.framework */; };
-		34C8BF5E1B4E1EC5AAE0DB9FFAE478AF /* STPFormEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B06D650C233C6AAB670E9F023F694CF4 /* STPFormEncoder.m */; };
+		33A794F63AC11A1B33D9B4B7D82C468E /* STPCardValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 920E65E6C48E0378FC1C7D6A3E065436 /* STPCardValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		351EE67743AC8C0882374615CE10BCB1 /* STPCheckoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7457698BE412915F6C4CA0084474A0EA /* STPCheckoutViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		358A1C020091252FACACA17E0AB34376 /* STPAPIClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A05CF686474D2BA25115AD67DDE1A32 /* STPAPIClient+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		36A971641591030E0CD9E4F17BF02B3A /* AWSMTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE48BAD47EECBAC78C535BF44A3FEED /* AWSMTLModel+NSCoding.m */; };
+		36CE12528DE458B17D37477B26F5849B /* Stripe+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1BC07FC057A950083ADD2AA1BE8AD /* Stripe+ApplePay.m */; };
 		3912409BCD7CBEB9896073AB51F4191F /* AWSCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F98234621C4732E26B6672E015062 /* AWSCore-dummy.m */; };
+		39DBC24AE76DD71134D7C8A9A608731E /* STPAPIPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D460E500F402478DB9EA3565A84CB24D /* STPAPIPostRequest.m */; };
+		3A04ED91FF25B1031247A7D48C43CA51 /* STPFormEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B8912931C66D93D42279CEC9B657B052 /* STPFormEncoder.m */; };
+		3D9C23F3EA4B2400DEAFBA1EA4C7D6E3 /* Fabric.h in Headers */ = {isa = PBXBuildFile; fileRef = 73843BD96DB3D3DBFFF40B9FFC78996F /* Fabric.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3E03304B59FAAFE61B399622D0D6637F /* AWSCognitoSyncResources.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7D4E010B35A19A67DEBF0BEC2763F2 /* AWSCognitoSyncResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E39B525508C432D6FC1DEBE961B8DE2 /* AWSValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AB9C9DA5339ADA202BCA59F8C88E09 /* AWSValidation.m */; };
 		3E9392CB5BD9C0CC47B04EDB40639558 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57850EDCB8D02A2245BE985435ADFBEE /* Validation.swift */; };
 		3F34303A511148F8BD72922599F234B1 /* AWSCredentialsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EC7AEB215578FFD3971012ECCC571 /* AWSCredentialsProvider.m */; };
 		4040480EAF9995FADC3EE11F8EA0BD8C /* NSArray+AWSMTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F58B4264F58D12AE0C1DCEC2B44AFB /* NSArray+AWSMTLManipulationAdditions.m */; };
-		4093AB7D80A52E54FDEF8579AFC937E7 /* STPFormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 422A4538D05A144025BB1517582D6F96 /* STPFormTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		40C170753D4308551C12224348FD3F5E /* AWSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 355D914E1ED9A86BB15437EC70EC9C8F /* AWSExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		419FF04637B25F95DDCCD60D3D16143D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC409584084225E081A83158F8FE046 /* Foundation.framework */; };
-		41FAACF9959539933D637CA58D82F0F3 /* Stripe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDCB24B05A672AFB1ACB0393169C5C92 /* Stripe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		438528171106237941D48796A2F27D14 /* STPStrictURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB9A806A36B1682A7BFECD39508C61 /* STPStrictURLProtocol.m */; };
 		44C2FF8306429B875026804A5E7DB6F3 /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AFF4631BC8DD8E0E77E0B6DDA968DF /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44D376BC26FEBF3AF7914A5D8403429E /* AWSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D47AAEF13FB25671680DF78B98ECD43 /* AWSModel.m */; };
 		477A023525F5E17B6039BE31C759D51A /* AWSSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A53119E2008B9AD201A3004B1B25617 /* AWSSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4893D4571A1968C41429639AD2D71A27 /* AWSMTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB336C7B4E2F673D2EF820371FC70E9 /* AWSMTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		492E4AE311C10D90AC33AED8D0AE0CB6 /* AWSBolts.m in Sources */ = {isa = PBXBuildFile; fileRef = A61EE167928687DEC8EEB85596E5EDB4 /* AWSBolts.m */; };
 		49858B2E0334C7D622C6BE6C752A9236 /* AWSCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5302AB820B1272EE8F1388EB64C32E /* AWSCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A51095BC3B449F39AD9213040A319E3 /* stp_card_cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3EF78300FD7EF71D27290C5BBE314E4 /* stp_card_cvc@2x.png */; };
+		4A51095BC3B449F39AD9213040A319E3 /* stp_card_cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A334D9A98E0FB48EBE2FCECFC4DA2F6 /* stp_card_cvc@2x.png */; };
+		4AD251C398EB424367EDA4FFD1C2F305 /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A67A6813B352B23FF52611249A266 /* STPToken.m */; };
 		4AE15FEEE84B52C131988DA1CD538205 /* AWSCognitoConflict_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEB1FCE33EB805D44FECB95033518CC /* AWSCognitoConflict_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4BA0BF47027AE8E49346C48AEF6052E5 /* stp_card_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C544B99788791D7D69547FE528482D1 /* stp_card_amex@3x.png */; };
+		4B8B6FE14F6F9E1387FB862F6BD40129 /* STPCategoryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA40D1625763759BF4AD7E9462D48CB /* STPCategoryLoader.m */; };
+		4BA0BF47027AE8E49346C48AEF6052E5 /* stp_card_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 477D26B3DC41673ABA2A383556666413 /* stp_card_amex@3x.png */; };
 		4E4017581B31B791DAA76C6035790257 /* AWSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3759B5BA97790A3A4A4DBFC1845026 /* AWSExecutor.m */; };
 		4EE46F5851266F568A54C80F93E7E7BA /* AWSEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A34C5581CD31A9E798D6AD6D2164F8 /* AWSEXTRuntimeExtensions.m */; };
-		5204176E58526E7B0451B8546C9DA02E /* Stripe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D455E0D683EAEB259930769D354085 /* Stripe-dummy.m */; };
-		533037F27D6C4D30F37F666712DD7577 /* STPPaymentCardTextFieldViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE74680B716BF9EDE792EF5520F59D /* STPPaymentCardTextFieldViewModel.m */; };
+		535E408C2FA52A13EA7A52247B6404E6 /* STPIOSCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EECC1EE10716929E10C8AEBB6E0604 /* STPIOSCheckoutWebViewAdapter.m */; };
 		5449D905FB569A2FDB5463416A45509E /* AWSMantle.h in Headers */ = {isa = PBXBuildFile; fileRef = 893413229E25E359DF2477E7A27D02BD /* AWSMantle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54CBE32CFA28799E24DAB9FBA1BBD0DD /* FABKitProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C5C89D173EB21B4BFFF2631C5C2904 /* FABKitProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		55758DD8A70AEA38CD52AB752A137522 /* AWSMTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D3F07732DD9945F71A872EE1F56E2 /* AWSMTLValueTransformer.m */; };
+		59904ED7B735C1F9DCF95D8370FAC5CC /* STPAPIClient+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = F1ED8ABABD0B617AF5227F5E69F7A54A /* STPAPIClient+ApplePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BE287A391E6A5ACCB9EC0C75D5EEE03 /* AWSServiceEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 92BC1F9D8A4F447B23B4AC323EECF0F6 /* AWSServiceEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BFD2DD5277BC7EC32502B24E799EDAA /* stp_card_diners@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 028E4381B6399687DA40F62CFB6FEDE4 /* stp_card_diners@3x.png */; };
+		5BFD2DD5277BC7EC32502B24E799EDAA /* stp_card_diners@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0770BF04C05CAFDA0AF99D692390BE0 /* stp_card_diners@3x.png */; };
 		61137E758A762DBADEAAE6454CB06EA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC409584084225E081A83158F8FE046 /* Foundation.framework */; };
 		617AC362F2067DA1CC75ED335E2141D3 /* AWSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 17DE8CDBA9DA9582E04ABB11DD388B96 /* AWSModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		618A989C9E2DBD213126ADFE7112B26C /* STPCardValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 670BA5102C51E7914404AABB892098AB /* STPCardValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6345BD749CAD9621BA802B38B937F052 /* stp_card_placeholder_template@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E88A09CF4DC172EAD1FF748CBFBD4E2F /* stp_card_placeholder_template@3x.png */; };
+		62E52FA2EEF511F659AF0835D4043DA2 /* STPFormEncodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5843577D8038467BCCFC272A53BC64 /* STPFormEncodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6345BD749CAD9621BA802B38B937F052 /* stp_card_placeholder_template@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 692DE840780D0DDC91EE51856BB42D29 /* stp_card_placeholder_template@3x.png */; };
 		63D279C7CDDE71B7AE99DCFA61BD3495 /* AWSSTSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444136E76F6D49EA85AC0B6C7D6F369 /* AWSSTSModel.m */; };
-		63E58283F75E05F5AD09E63FB991A273 /* STPOSXCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D67A10ABB58DCB724067EB442D32CF9 /* STPOSXCheckoutWebViewAdapter.m */; };
 		6440FD205590FB46AFB39B779B030722 /* AWSCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5A16DF69699AD019037648966BF429 /* AWSCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67244FDD1E3933E610D6E783C1814645 /* STPPaymentCardTextFieldViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E603479FFABD644D8B4D454F423DB8 /* STPPaymentCardTextFieldViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6618D77F1AE98F3481204F86D38DE9C1 /* STPCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DD91F9E28B628D295F35E2043D712B /* STPCheckoutOptions.m */; };
 		69A447D12E60E5C3451DA30C6BB4BF7F /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF237E542B5523827482CC3887275B6 /* Manager.swift */; };
-		6A9E8DF03FB58F47BB0878B62FB1EC5C /* STPIOSCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C532CBAA333748A961F57008DF6C697 /* STPIOSCheckoutWebViewAdapter.m */; };
+		69AC8C82F9942179538B437142238F67 /* STPBankAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 57554439628D658531094521DE0A86DB /* STPBankAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AE534AE36ABC3EDE7907242953B6666 /* AWSURLRequestRetryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F244DE4FD748C011696ED063BDCA8 /* AWSURLRequestRetryHandler.m */; };
-		6D472823FC451A711BAF78522B0DE882 /* STPCardValidationState.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE2E48802E8597447649CDAE13B45BA /* STPCardValidationState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C8A2C221FDBFC62F9613D584210EB66 /* STPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5880976BCA60D9FC9FD896060A18D6 /* STPAPIClient.m */; };
 		6DA66D0660349025E144643F0E69201A /* AWSURLRequestRetryHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D184127B8A443D373FBDC4E178B7C8A /* AWSURLRequestRetryHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E84AAAE5C710E59799D0B9D37A71AE7 /* AWSFMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEDB9959701112ADC6150CFF73B98F1 /* AWSFMDatabase.m */; };
 		6EB6853210AA7FABE5F99A205D739444 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F050AF5B422A200EC21AAD2906A2B374 /* Security.framework */; };
 		70DB1B8B68F8553F2E9CFD74738FDEF5 /* AWSXMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D8EE496FA3D91FE88552F9621A936C /* AWSXMLDictionary.m */; };
-		7115C6274665BC5CF5DE920F784310DE /* STPIOSCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 703C50D89DCF8ACE9D3A62DABAE9C0CF /* STPIOSCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		71ACAB312A720B30EB186559C0A5E9B6 /* stp_card_diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E487E06BF56BA265133EF948AE379800 /* stp_card_diners@2x.png */; };
-		72FAC5A0BCD914C9A79F2BC73A0C4190 /* stp_card_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 681B3C71BCC3DF1D7D87CA3346EAFD4A /* stp_card_placeholder.png */; };
+		71ACAB312A720B30EB186559C0A5E9B6 /* stp_card_diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4AAD1BB69DBB1AFACC2C4264F090C9 /* stp_card_diners@2x.png */; };
+		72FAC5A0BCD914C9A79F2BC73A0C4190 /* stp_card_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FCED4F134D9431545CADDD9DDF9C07F0 /* stp_card_placeholder.png */; };
 		73C9B872BC73AF3D8581AC3AA90AD0AD /* AWSCognitoDataset.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B62D2288ED37E4127EF4341894425C /* AWSCognitoDataset.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7599C6FB05EB2531EB2B2B2D7D8E5406 /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E16C4520ED2D2FA8C9E0182DEAECB8E /* STPCard.m */; };
+		7593FB5CE79F12481ABF7CA8FC1C2A23 /* STPCardValidationState.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBF26DD5CBB61B55418F72E08C06EE3 /* STPCardValidationState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75CBA3B0768633514FD677FE11863752 /* NSValueTransformer+AWSMTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA198F34FA012BB0FDA5D86D6BBFCC8 /* NSValueTransformer+AWSMTLInversionAdditions.m */; };
 		76BBD26A6C5F425F27CA599CAD0AB941 /* AWSCognitoIdentityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB8F5BBAF6D8F33F8C63321909BC553 /* AWSCognitoIdentityModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76C5B0D2802FD913C6E00213D8685E4B /* STPCardValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7A71D48AFDE28520497132452B7690 /* STPCardValidator.m */; };
 		772A33E16B04795C9127265ADBE8BC41 /* AWSTMCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9421881BF9A40C648A2D1C4DD79C04FA /* AWSTMCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		78C6BDAD830BA7DE26F5F18559E79DCA /* stp_card_placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C035CE15BE62B5AF0D3C347221AE8BD /* stp_card_placeholder@3x.png */; };
+		78208CAD3D7D34B3AA57092349DE4C55 /* STPCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = A495F23B8CC2A1034BFED3DFCB79FF97 /* STPCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78C6BDAD830BA7DE26F5F18559E79DCA /* stp_card_placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DFA03977F7E049612423C7B5532AE72 /* stp_card_placeholder@3x.png */; };
 		7907115082529ED30BF1A9BE3DB3D76A /* AWSMTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9DF457AAC2B326B2F5F668AD43ABA5 /* AWSMTLReflection.m */; };
-		7929AC395A6DAEF3295D6A8F18F55355 /* stp_card_cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E17193FD79E243761328AD990B1D68 /* stp_card_cvc.png */; };
+		7929AC395A6DAEF3295D6A8F18F55355 /* stp_card_cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 185D00DC8B3D22CAECB76FE49A2A2360 /* stp_card_cvc.png */; };
+		794C192754B05884533A35C5C2A8D916 /* STPIOSCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D8EC0B9F742CFB1C491518CB87B3BF /* STPIOSCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7AF17A0E38000262169706D29E385A3E /* AWSMTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D865EC06905774CB1CD9AB21FE9B4E3 /* AWSMTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BE5914DE54EE3917D5B3A536D8B6EC9 /* AWSSTSResources.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7BD60218516217F3E39D9EC8F507D5 /* AWSSTSResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CD3F7E7BC257DC2775D0A57B13EC61D /* AWSFMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F818F8F508C51ACFB10F07F1485C47D6 /* AWSFMDatabaseQueue.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7D651F5ED741114952DE9525397498EC /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
 		7DFEF32C539546ED62B1E09D44CE9D6D /* AWSGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9B2FEF7FAFBE9010E30766434CDE6E /* AWSGZIP.m */; };
 		7EB192782E3919A9F4D4DD0A59E0B0F6 /* AWSSTSService.h in Headers */ = {isa = PBXBuildFile; fileRef = C6CBC7BF912B41C55F7018E03F6AEF97 /* AWSSTSService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F541319D3CCCAFF715029A18587F95B /* STPColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D21277E86AE9407333EB8C7009A410A7 /* STPColorUtils.m */; };
 		7FBE2A04DD09F32F1055AECFCCDDE373 /* AWSCognitoService.m in Sources */ = {isa = PBXBuildFile; fileRef = E476C9B5109E803B79B86B4F57569F07 /* AWSCognitoService.m */; };
 		7FFDE356D8C9FC5555F5C2DC0AB07CB3 /* AWSCognitoIdentityService.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D2A24DB1C558D9C7C4A44AD972BF28 /* AWSCognitoIdentityService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80D217B5A064E0B7979B08ECFAB51A60 /* AWSCredentialsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E130C25145631BDE3100C6BDCD00E55A /* AWSCredentialsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		810E4013624B3E9DD15A3DC7117688C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3821ABB2D02D2C1BE9E2FDF6DDE9847D /* SystemConfiguration.framework */; };
 		827CE5937395C39FB0994217B520610D /* AWSCognito.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D31A2A2421802B8EF79F4C41E467B14 /* AWSCognito.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82E99223468E7EFB0922227975830BD9 /* STPPaymentCardTextFieldViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAB847DB1A832A54F3BFF376B1A193 /* STPPaymentCardTextFieldViewModel.m */; };
 		82F2E9FB9C488D26BCAA7AB048BCA260 /* AWSCognitoRecord_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F6408BB1BC4EA740D1A66D6E3140212F /* AWSCognitoRecord_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		848CEFBFC69DEBAF0E18885F3269F439 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29672D855B698AFD89FC2DE5FD473CF7 /* ResponseSerialization.swift */; };
-		84DA2D12A4BA256DA82AA9CB18A6F3C3 /* STPOSXCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29781084F397FDDD2AA5D955AF664E69 /* STPOSXCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		854C1FF3920DA4F43166E1232B8FBCAA /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 8AA35859AFD5CF6DE7F2F7C223F618C5 /* Images */; };
+		854C1FF3920DA4F43166E1232B8FBCAA /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 8DA718A9E9B79B1B741E9CAFBAA61349 /* Images */; };
+		862509308C1C39BB53C608EF464C43B9 /* Fabric+FABKits.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF68D8B4D8F20E2937C4BCF1CBDB795 /* Fabric+FABKits.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		86E4D4B87F53E6329B23623A6D03A2F4 /* AWSFMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 579B44DB1CBCC5EEEBD335CFFDEE5105 /* AWSFMResultSet.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		87383789264CCBADA0BCD2E36D381D04 /* AWSGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE6A8E112BD1585E5125B75BE8E3182 /* AWSGZIP.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		88DBF401D0F6A3932A5B332848F00232 /* StripeError.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DD18141D55554346555A7F7FDD7374 /* StripeError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8949109E7BCB6A0DB331D4C2DC21C834 /* stp_card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = F553B3D39BA4551843C76A69ADED97A0 /* stp_card_visa.png */; };
-		896C2C84BEA238E3F07A92B3F154A664 /* STPCheckoutInternalUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC3398B60969B713D29006F982AEB1E /* STPCheckoutInternalUIWebViewController.m */; };
+		8949109E7BCB6A0DB331D4C2DC21C834 /* stp_card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = F369E01E89603E19844AAC49544F443D /* stp_card_visa.png */; };
 		8AAE1356BECF4CD401A1CA6F747DEE06 /* NSObject+AWSMTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B926D7F9E8D3A03E3429A4BF1911 /* NSObject+AWSMTLComparisonAdditions.m */; };
 		8B00E22BA8622BFEA64FABD8550F3910 /* AWSCognitoRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C393C52C7BD97C55E941E896C6D34C /* AWSCognitoRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D8D2FC47584D297DBECE0998568851E /* Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F690B7BEA5B68ACC22AED07BF392790 /* Stripe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DD8DB3F9909385F188675962C391D5F /* STPCheckoutDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9E8C3FC07EBE9EEA42CECC3DAB6C63 /* STPCheckoutDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8CBE152F986FCA5E15B1C47A9B0F05E2 /* NSDictionary+Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA6E063172EAE610656F218BA6A5701 /* NSDictionary+Stripe.m */; };
+		8CF6882F2F6DC04D787A05A83D45713F /* STPFormEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA5B3FA85A06B77B240F79F6154C14C /* STPFormEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8EBDB37A9BE4A76CE4C2E99ACA7E0AE0 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AC697A3DBCFECFF9B92588F64C19B /* Request+AlamofireImage.swift */; };
-		8ED586F4609844D92761FD1C1BC244AF /* stp_card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2837F79AD96B91A6F5831CBF06832713 /* stp_card_visa@3x.png */; };
+		8ED586F4609844D92761FD1C1BC244AF /* stp_card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D144FB0A50206D2509E59934255D5CE0 /* stp_card_visa@3x.png */; };
+		8EEF38B7D71E9A8D97DAFAD4C5C78478 /* STPAPIPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 52822D6D02802C979AF4FE50C2359383 /* STPAPIPostRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		900F2381FDA31EE73F860E1D98571CED /* NSError+AWSMTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E64E7A087CCAE55EF74BA0AFBD8582D /* NSError+AWSMTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9077ECA2FA7B9C5D73365490A3D8898F /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A048FBB723FD62BEE62EBAEDFA0BE94 /* Download.swift */; };
 		940CD63F15DA69EB7945A21C64AD6BC9 /* AWSCognitoConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 139478DD923D9E187C5A1FC1C7B09203 /* AWSCognitoConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		941F32AAE89E524327690F60BF5C910A /* STPCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEB16F6EE0682F2A5CC84AB885D33EB /* STPCheckoutViewController.m */; };
 		96AD3CF5EC25E22D619549BEC3B0017C /* AWSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A968ABDFF86912E193F3E187B174E7 /* AWSReachability.m */; };
+		9734E95A4C7FD9ACA41031D47AC665C5 /* STPCheckoutOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = E77294A0FCECCB0D7752C9E5864BA2DD /* STPCheckoutOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		977B8E96D50427F0197E4E39CB0DEC8C /* AWSCognito-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B12319D58663ABF9F0C098F5A9A5A /* AWSCognito-dummy.m */; };
 		97E752DE613E32E6F60DAEF2C20C4C95 /* AWSMTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B7C948DE8C1C830657BAF38061EAD /* AWSMTLModel.m */; };
-		98C674AD0B989DFAC1E5F517455E4D78 /* STPFormEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 33725027F31C8299D87B9C7CB68D6034 /* STPFormEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		99F112156A01B474C18BF7AC8DA11C6B /* NSValueTransformer+AWSMTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9050BA93901BA928FF92FAE10D4C0A43 /* NSValueTransformer+AWSMTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A0255084624440522163160993E8643 /* AWSEXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2051E50CFAD6F8FE9962A58D7674C948 /* AWSEXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A04F0E1687B3BB1AE514B6C3C1B4083 /* AWSTMMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A5B60C871AF1FA00A5068C095C4CBB3 /* AWSTMMemoryCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C8B1CD55CD3044614C73B7EA241FD00 /* STPBankAccountParams.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC0541AA0234571CEB319C4963B1CB /* STPBankAccountParams.m */; };
 		9D7D7AC629D43AD78A761841B376260A /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC051E2742E3C7FED2A86F6E069F48 /* UIImage+AlamofireImage.swift */; };
 		9EE118BC8EBFEBFE6A0C62BB8F91FED5 /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 612E983B3D5B71DB89CD99F98B85455A /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m */; };
 		A001EF7F7CAFFD5C6D500E77C2A1A651 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4314BEF91FC7F20D1F3D3178BC4DFFF2 /* ImageCache.swift */; };
 		A02EB4B6C5B0181CC8F6BF06E3269C2A /* NSError+AWSMTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3213FC2585E9BD6747E1888D96CB6127 /* NSError+AWSMTLModelException.m */; };
+		A0C4D261D0FCA0FBA72F91DFC78F6D0C /* STPPaymentCardTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DDED51932936F9F2F78736283591B0C6 /* STPPaymentCardTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0FCF8A4A402E26BB3FA709D18189BD8 /* AWSLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 553F3A2602ACA91EE5DB37390F4BF211 /* AWSLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A16496463535FC5A9DED14F138EC5D /* Stripe+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 23C072ED8D12907F81E742626BAA4C19 /* Stripe+ApplePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A215FAB60CB15B6E5FA3A15E9E350D7D /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1431E37F03EFAD3E7B30A5136850DE69 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A374B9D7121990DC87B6CFC0059E0019 /* AWSFMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E668401A6E1E10A372E1853A4DD3B5 /* AWSFMDatabase.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		A382F8F70E2E65EB5E4193A282871239 /* stp_card_jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8361B73896B6B54636F0185F7F5E6C29 /* stp_card_jcb@2x.png */; };
+		A382F8F70E2E65EB5E4193A282871239 /* stp_card_jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A619A8B1EF2C9AB5F196929EBD136189 /* stp_card_jcb@2x.png */; };
+		A46144FFDBA5D2674A6B3BD9EB3AE2EA /* STPCheckoutInternalUIWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 479D1CC75875E1DD2337C6AFC3B4E4CF /* STPCheckoutInternalUIWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A4B6A219DED6C182E34B6D1D1300BCFD /* AWSCognitoIdentityResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C949E4FA2D671EEE4ACCD9DB8D2E3 /* AWSCognitoIdentityResources.m */; };
 		A6216949E7267298FBF8FEA979ED7633 /* AWSCognitoDataset.m in Sources */ = {isa = PBXBuildFile; fileRef = 093E96801CA6A784438EB2B48C9EBC37 /* AWSCognitoDataset.m */; };
 		A6D17749B5B6A289FDAFF754151100E2 /* AWSIdentityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DEC9B19F1866F7D803ED834CE6353A /* AWSIdentityProvider.m */; };
-		A8952CD937999391818490E285729AF2 /* STPAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FF84CFDD0EB991A1429B8ED33750E53 /* STPAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8B5EDB7371475F62767B297B1A10CDE /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B68D27A95CA21C51082D3BC3EB5EE /* ParameterEncoding.swift */; };
-		A92570B1D14DB0B3BEA4D5E67EFBA1BE /* stp_card_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BEF244EC6B2DBA83DF7184802830232 /* stp_card_placeholder@2x.png */; };
+		A92570B1D14DB0B3BEA4D5E67EFBA1BE /* stp_card_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2AEF68107EC5D1EFF7BD607FC20963 /* stp_card_placeholder@2x.png */; };
 		A96C5EC2FB631737C4C6CB33D9B77B6C /* NSDictionary+AWSMTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D3545C9217898E953B73F5ECBEAA891F /* NSDictionary+AWSMTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAB3A2E1596C0E0CF4251CDF33B9CFD6 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF40260C13C8803A7C8DBC811278A6 /* ImageDownloader.swift */; };
+		AAD2F518F10C6AFC81FB517B19259319 /* STPColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = AD705AA524ED6AC0E1B34A7CDFAEDF1C /* STPColorUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AB50B8DB51A4CBB8E57B99B5198D346B /* NSDictionary+AWSMTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99FA2035181A55AB2432E6B7C9FD72 /* NSDictionary+AWSMTLManipulationAdditions.m */; };
 		AC3EE73C1F46BF950625AFA96CC72459 /* AWSCognitoConflict.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DEE65B0E5FE9A09A3D46F7CE1F3CA /* AWSCognitoConflict.m */; };
 		AC6A63A0DD04EC734DCB5DA7E88E34A8 /* AWSUICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A5BDB53EE0CD524766390CBEC71BBC /* AWSUICKeyChainStore.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AE902A3D5D4A4943CFF95D0D80B45F51 /* stp_card_cvc_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = A0935E904996D6B8B97D90443390648B /* stp_card_cvc_amex.png */; };
+		AC8A7C8F72B38FE9ED901408D168432B /* Stripe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F26E1CA447D7030A87A86CA882126A8E /* Stripe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE902A3D5D4A4943CFF95D0D80B45F51 /* stp_card_cvc_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF27D083EDDA468EC9F0C4981B1FD61 /* stp_card_cvc_amex.png */; };
+		AED1D72663D8CA8F5E71DC192EC99DD9 /* StripeError.h in Headers */ = {isa = PBXBuildFile; fileRef = A6FE54F2C1616DFDB2DFBB9920316376 /* StripeError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF3307EB68079770F00D2D16706A5F2D /* STPCategoryLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = B17413BB31A24032D0B77BAD387506FE /* STPCategoryLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B17FBF9D8E183AFE21181AA97DFD4F69 /* AWSMTLJSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 183C2F8AD38ADED9D38ED8ED8275632D /* AWSMTLJSONAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4320EAD077E3AFBFF37FD92D2A70288 /* STPCard.h in Headers */ = {isa = PBXBuildFile; fileRef = D2AF22800AAF21330A6B33130852FD9C /* STPCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B44788802DB9E4041DB62888FB3FAFB7 /* AWSXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E53D51A9DA5FEBBAAAD629FF72B2F5D0 /* AWSXMLWriter.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B4516FD372A167322DF92A970371AB78 /* STPCardBrand.h in Headers */ = {isa = PBXBuildFile; fileRef = A574225358B4F8C22B9FE980CAC69790 /* STPCardBrand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4AE9C233471501C0E997FBA186DEACE /* Stripe+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 403AA2E594D9C37016F597C0E1B67193 /* Stripe+ApplePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4F2E51C8F29848887CF922CDF1D70BC /* stp_card_cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007595456EDF2398C0DF66C14F7398A /* stp_card_cvc@3x.png */; };
-		B651CD236BCA037E596C545A762263B4 /* PKPayment+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D6F95780BF4280473E61C308285C3C /* PKPayment+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B75238FEE3FD60F428A40664E7960CAD /* stp_card_discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B32A07C3E1687DFC59BA6CF5B989E48D /* stp_card_discover@3x.png */; };
+		B4F2E51C8F29848887CF922CDF1D70BC /* stp_card_cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F346561DB97C5476C5D34FFFAFD27DC1 /* stp_card_cvc@3x.png */; };
+		B75238FEE3FD60F428A40664E7960CAD /* stp_card_discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B586B96EDBCD3E97D93211CD346FFCF /* stp_card_discover@3x.png */; };
 		B7D31748638994F6C00CCE274E6441EA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0460B5E0355770DB0DF3472EBB9D55C /* Alamofire.framework */; };
 		B89D0E23A0FBF3ADC745DEF36EF0C59C /* AWSSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC628B9A5474198609303BEBE1FB518 /* AWSSerialization.m */; };
 		B90C845B789A7F95EAFEF9373B682FD2 /* AWSCognitoIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9BE1565C983F30FD31CC546E68092A /* AWSCognitoIdentity.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -189,19 +203,22 @@
 		BA7E08A1916D00C3D7A447C052B28B93 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F77D2B59157A2D1E816BCE802B7CEB9 /* AlamofireImage-dummy.m */; };
 		BAC0164F23FCBAD9B9403B11E93DC5ED /* AWSCognitoDataset_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAFE5674B3650FDD3E8830A947E620B /* AWSCognitoDataset_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BB206F705801CFA87F0D9255E147DFB4 /* AWSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F8800B748EF012E20B8DDD1D02F558D /* AWSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBF6424DF316B564F366F0F870D4E30F /* stp_card_diners.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6C64C539089F0A9537043E84BAE7B6 /* stp_card_diners.png */; };
+		BB22DEBB51CCBF0D5C04195913C763C0 /* STPCardParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 186E51926C8E9858BEEFF1BFE8D6E55E /* STPCardParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBF6424DF316B564F366F0F870D4E30F /* stp_card_diners.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB1A2300F823F6C9FF4FC512F023915 /* stp_card_diners.png */; };
 		BFD1D0B7FCC51987D81CD73F6E9CF486 /* AWSUICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F28DC6F1191534657E90ABECE1A14B68 /* AWSUICKeyChainStore.m */; };
-		C3EDB720AD66F72D52C288B938CD3A63 /* stp_card_jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8604397893444D6A4547A0F423867045 /* stp_card_jcb@3x.png */; };
+		C19883B4AE516029136F079CD856B054 /* STPAPIClient+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6E05692B1408DF1FBD0B0085D6496 /* STPAPIClient+ApplePay.m */; };
+		C3EDB720AD66F72D52C288B938CD3A63 /* stp_card_jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB17F82CB4CD560C9011DF56FE34B52 /* stp_card_jcb@3x.png */; };
 		C4CCC618919F05AD65BD10BD808F2AA4 /* AWSCognitoSQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E9C51E315CEF21F0A975C34B67972 /* AWSCognitoSQLiteManager.m */; };
-		C72D4BE21FDC636C22BEE78E7E489DC8 /* STPStrictURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EFD05D5BA677A862E9E6668E04DC7 /* STPStrictURLProtocol.m */; };
-		C898E1636CFCC1F71F59BE918AB8E356 /* stp_card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2967360F742053F897717B605F4EF3 /* stp_card_visa@2x.png */; };
+		C5BE93CADE82AD25C9CC4C2F8C1CFFBC /* STPStrictURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = AF20D0A99A213B0159D6927E5162F9C2 /* STPStrictURLProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C898E1636CFCC1F71F59BE918AB8E356 /* stp_card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AC9C28D7E7EEA8DE32E0784EA30899 /* stp_card_visa@2x.png */; };
 		CAB5535EF845757C517E6129AAD3C5B8 /* AWSTMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7613928E82298AEEDAD2D543A740077E /* AWSTMMemoryCache.m */; };
 		CB89FA6FFC393991E6793A7E881A0E29 /* AWSCognitoSQLiteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6056A46E839113625DD39FD0D34757F5 /* AWSCognitoSQLiteManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CE1A8E0A96FF1DDB14E0F5472CB2F5C4 /* STPBankAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 033A7F9B6212DDEFEC7BD96061D2DB0C /* STPBankAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBA006D90C7F38C46FBE788550EE25D6 /* STPFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D948093372F563A8F43A902A170B40C8 /* STPFormTextField.m */; };
 		CE776304CA62ABAD1FEC52CAE946A5CC /* AWSCognitoSyncModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD4DFFBE2727B4CC54634EDADC6314E /* AWSCognitoSyncModel.m */; };
 		CFE73193307DDC8DD3E401FC59BB2132 /* AWSURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DF889938964A940ADC6DF18365B939 /* AWSURLRequestSerialization.m */; };
 		D0E39EA22B4FE45EF9E2D0C7F8AD05D2 /* AWSEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = B626D29E127CC9680655E7D727D03667 /* AWSEXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D12369EC172E28D831B5EB15611C53D3 /* AWSMTLModel+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A83A50A77F8E7F51DCA684B07458E37 /* AWSMTLModel+NSCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D221CBEA1927B1E44AB54F764B2D62FE /* STPCardParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F669B356BE717C590F9C5852EF0B3 /* STPCardParams.m */; };
 		D2794BFC3024C229B3EC669209819087 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D365432AFEDB15ECCCD02A57EAA38F25 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E7865DA93CD3E14648804BF3D5DB10 /* Image.swift */; };
 		D39B20327B1DAF6D8753ED5685DDE6DC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE21A583D926D174D38B21BF5CA7A7 /* MultipartFormData.swift */; };
@@ -212,59 +229,56 @@
 		D7916E49A140F5E8F95085BF74F00E5F /* AWSURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F34B974549B4A5F2EE88A4DDB3FCF873 /* AWSURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D803AD657902D7601608AA11ED3EBCE7 /* AWSTMDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B69F1633E6AEE0A148C3FC6F9290AB24 /* AWSTMDiskCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D8136D3B59D4753690000387A8082B54 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A519407A58C9256BEAC6E0156D0A1399 /* Alamofire-dummy.m */; };
+		D91CE696D0162E2A6E2AA3BF6E07264A /* STPOSXCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A08DC5B966928167C2D3DBDADE26C /* STPOSXCheckoutWebViewAdapter.m */; };
 		D944514473FC10169CBCF20B9DF8B057 /* AWSTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD3CA8B8BCEBBCB6B3A5A47997588AA /* AWSTaskCompletionSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D959B63E35C65EAB3CC57BE7147F7229 /* AWSFMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C51646BD752657008D8F43847B4244 /* AWSFMDatabasePool.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D98808207B51EFB0A222D5282B99F6D9 /* AWSTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DAFAF16E10E11B47EA76EFCD4367F6 /* AWSTaskCompletionSource.m */; };
 		DA216B2B15CE383A856EDD7164E1C08D /* AWSEXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CF848BD14F4E52C403433BBF441425 /* AWSEXTScope.m */; };
 		DA7148DC938E3A844FA9705CB16E5FEB /* AWSSTS.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B9B1632405164E8377C6E91FDF9F6E /* AWSSTS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB2E74D1A5C20C39E04F17A489CA51CD /* STPAPIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D31C062ADFDE179E83D6575445B118 /* STPAPIConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DBC4015B2AAE39B4D6D0787473825E7D /* AWSCognitoIdentityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 76319C15586C8D02D8CC71D30A45FC3C /* AWSCognitoIdentityService.m */; };
 		DD266DB1040735A3E90A1B51011EE2CE /* AWSClientContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B2A9FFF2D0F0938663EF4F91F0CA55 /* AWSClientContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD439A7063FD71B595D0DCE8D26F5588 /* AWSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FE006DDF1FF28F2FF3BC8F304782BE0F /* AWSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE319A9BA5E327E8683802245B5DC617 /* STPToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B50C9DBEEDECF64F9C21BE8F64CCB2E /* STPToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3ADB89C6A061C6D69C5BCD04AE7E9F /* Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACA77840B2F5B071A265E51C72B22C7 /* Stripe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFA5DB923813581C599BC99C92145258 /* AWSCognitoSyncModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D8FCBC3E0DC07726D125D610196B46 /* AWSCognitoSyncModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB231355C961110CDA4B917EEF086DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC409584084225E081A83158F8FE046 /* Foundation.framework */; };
 		DFB3DCE266D7C357774F1AAFE36D9424 /* AWSCognitoUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EA69960BC0AEF63529FAD6DF3CA7EBA5 /* AWSCognitoUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E1605EDC3E9F9C89489ECB4B0312D105 /* AWSTask.h in Headers */ = {isa = PBXBuildFile; fileRef = B23BBB3DE8BE68083396DA5F3CF59F86 /* AWSTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1AFA37CDC8AB3420783CDC603E586AB /* STPCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 847464D818031C23AE6B32B87E115FF6 /* STPCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E1DABB9F6BBCF9618439DA6B87DD98B0 /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F8DFFAF62F49ECF28092C80DD5BC7F /* STPToken.m */; };
-		E23CFEE6BD26F7A02562B4C71A01E77A /* STPStrictURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E9EB6EFB4F8680897EA8C762F3D7B5 /* STPStrictURLProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E2B00D6C2391A2B502238DC2585A46C3 /* AWSURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B5FD602459DD802327F299AEAE7FC1 /* AWSURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E44A0CE683214E3ED62FC710BA15E169 /* STPAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B609E4F7F8566BBD58E6C6C0D79FFA /* STPAPIConnection.m */; };
-		E5CFB4BAE56FFFBFE028302DDA76DA02 /* STPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C6396022964FF824A6A080F019284E /* STPAPIClient.m */; };
 		E6851F9779BC211E13827E2B0135FDEE /* AWSXMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D4D99C30B7D2E5906E963CFA39CD97C /* AWSXMLDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E6D041ABFBB48D9F1D8AA96E7D4C6C34 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FB876F20555CAF9EBD63BB18D3D9 /* Result.swift */; };
-		E6D3FDB056A1E9541F7933FD5D29E2A3 /* STPCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A326B2D50F375C38E7A085A89B89 /* STPCheckoutOptions.m */; };
-		E79BB0590ACBB62834B97E1393F220F6 /* stp_card_placeholder_template@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D23D3AA3F53834851494F9C0209E1DBF /* stp_card_placeholder_template@2x.png */; };
+		E79BB0590ACBB62834B97E1393F220F6 /* stp_card_placeholder_template@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 790363D76A6827281CDE32C0313AF169 /* stp_card_placeholder_template@2x.png */; };
 		E7B226D8BB16471AD63665A794036E44 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF97D783E454E95A8A5FF30D76E52D8F /* Upload.swift */; };
 		E7DEA5A9A88AE94CD828F500017F769E /* AWSCognitoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA24BE9F7632BF837F15F10CFACD3B2 /* AWSCognitoUtil.m */; };
 		E816509B4E3564E1A117CBDC0D845D69 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083C06E3796C915EF2D5145BEDC91ECF /* Alamofire.swift */; };
 		E8872E924526A05D51A54C06D4E1894E /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA254310015DA64CB6FA75E175E7B6 /* UIImageView+AlamofireImage.swift */; };
-		E8E73D4BE345BDF6F6705BD34E9D21EA /* STPAPIClient+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAEE6726FFB14E00A93E4FD1FC2061B /* STPAPIClient+ApplePay.m */; };
-		E94AA84905D401C81CC9DA8DC2CEF56F /* STPColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9965B14B5B40A3375F458520DEEEC986 /* STPColorUtils.m */; };
 		E974AED2DE83BEC3435FC3C5892239CA /* AWSURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 980647D5FADE83638D9C34059D05F3A1 /* AWSURLResponseSerialization.m */; };
 		EA867D8BD219CC8167D1BF901B4359F5 /* AWSTMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2102E665C12B133CDBA6A34F6F5953 /* AWSTMDiskCache.m */; };
 		EA9D05F1328BDB4A09D65109E723FEE8 /* AWSMTLManagedObjectAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FEF1EFDA8E0C8F926A61B4BA172319 /* AWSMTLManagedObjectAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB5BD0ABEE8EE6DB2312C705E37422CD /* AWSFMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8966E883A1F70A0ECA50DCC113793806 /* AWSFMDatabasePool.m */; };
+		EEE3CE2EB9EDF8C9C1A3B27F89C1CEFE /* STPCardBrand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1421A5ACF9B12B6DE83F4A52333E9D6B /* STPCardBrand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEE3D7A3502EBDF22B1C53C146D3D1F1 /* AWSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2F69FA4A77D9C0C6334915A952A955 /* AWSFMDB.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		EF940973F90EA9070DC4435716D6C031 /* PKPayment+Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4C4C1BC7BA1A4A8BA92A27B32A0CE8 /* PKPayment+Stripe.m */; };
+		EFA847ECE1BC64391E5A3B7C44546A1E /* StripeError.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C18C8195F12B32B60821DEA979AAA1 /* StripeError.m */; };
 		F090ABFBF55AD5291EE094A224E5DD39 /* AWSSTSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DFA304B0B478EC9297D72D64E88020 /* AWSSTSModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0F88A1DD76D11FD1A5FA0EF570959AE /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164AE0CB91D65DE412E1026D13C43A7 /* ImageFilter.swift */; };
 		F16FEF1CB9703FE1887C8A618B84B7C6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA05B8E601904C18E4DCACE3323CFE0 /* Request.swift */; };
-		F30A6192E09EBC0F01567FE8310D5E53 /* stp_card_mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A886857E9122FD202F219D2CCB72F38 /* stp_card_mastercard.png */; };
+		F2F260D523318BF144C343B9562A2738 /* STPOSXCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = A3007F02EA4978CC12EFF596EC9914EF /* STPOSXCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F30A6192E09EBC0F01567FE8310D5E53 /* stp_card_mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 755ED15724A3E9F13F4389CF9539CE98 /* stp_card_mastercard.png */; };
+		F370F07F4355C3D852E9C9FB9BB47889 /* STPBankAccountParams.h in Headers */ = {isa = PBXBuildFile; fileRef = B550613F5E814AA9DFCD894D969404C1 /* STPBankAccountParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F38445AFB9C489A2D928C7D1C29BBBE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC409584084225E081A83158F8FE046 /* Foundation.framework */; };
-		F38FE82EDCDC9EDEBCC081F5C3502E64 /* STPCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151DF81B6FB84F0638E158EC304D78CF /* STPCheckoutViewController.m */; };
+		F3FFF40C0F1318EA5B1690261C9E1146 /* STPAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2FD64F385F13ACA8BE018632CF646 /* STPAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F67B98CFB767062AD38C836855B382DF /* NSDictionary+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCB7F4924DEC8B3E6046D42C4E57B81 /* NSDictionary+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F802E8E695E7A77FB7A367F25DFAD628 /* AWSCognitoConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EEA05716A3F6AFC92B5EB9475767C0 /* AWSCognitoConstants.m */; };
 		F9161A0AB39C4C257FB6A0FD6837C101 /* AWSCognitoIdentityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF026B512FA7F04D4EE30B3D703BDF3C /* AWSCognitoIdentityModel.m */; };
 		F980EF4EA30C0E1C31EF4A22DEDFB517 /* AWSValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = D70BC029EA5DEDC352DB494C60A134CB /* AWSValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9E7E11A76EA5FC236BF2D01867AA3EE /* AWSFMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DB2EF901387C4E6EE68B159448C51 /* AWSFMResultSet.m */; };
 		FA5933DE99FD8BAF318EB3C524ACDBBC /* AWSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 96CCCD8FE2AB00A6B2F0EC9187E9057A /* AWSReachability.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		FADF4FCBE1FD1DB9CF88F58CF9DC9128 /* STPCardValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3318ADDABDE6E738D81E7290D7B6F1 /* STPCardValidator.m */; };
-		FAEFC5EE2995FA5663B3350CA9457353 /* stp_card_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FB229FFD92A721C2C92A2961C9500D /* stp_card_amex@2x.png */; };
-		FB60A9EA484DB8781B581F464A01072C /* stp_card_placeholder_template.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171AD75862620AEED14B491B177A945 /* stp_card_placeholder_template.png */; };
+		FAEFC5EE2995FA5663B3350CA9457353 /* stp_card_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7E61C8C3B485674C9F58F3CBAF639FE /* stp_card_amex@2x.png */; };
+		FB60A9EA484DB8781B581F464A01072C /* stp_card_placeholder_template.png in Resources */ = {isa = PBXBuildFile; fileRef = 2690C2B13DE91D1ABAFF0E1D9BA72140 /* stp_card_placeholder_template.png */; };
 		FB675BCE59268A1FB27C9AA2699777A3 /* AWSCognitoSyncService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9795AD8742A24982F2F18AB2D19CBAE8 /* AWSCognitoSyncService.m */; };
-		FBD1C1DFFFC15AD8EAE71AB0CABA6C1D /* stp_card_cvc_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12483E50A96F965CE7F64E6B99AA4CCE /* stp_card_cvc_amex@2x.png */; };
+		FBD1C1DFFFC15AD8EAE71AB0CABA6C1D /* stp_card_cvc_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D98F6F61D090660A4A9DA27422E2CD4 /* stp_card_cvc_amex@2x.png */; };
+		FC9A57397F797B46DE53B92CD1F74061 /* STPAPIResponseDecodable.h in Headers */ = {isa = PBXBuildFile; fileRef = C39CDABAC2C86E5D096968EFDE344C02 /* STPAPIResponseDecodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCF6FD7539FE4F89C9E633A9F3A1A5E8 /* AWSIdentityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE9641DF7FE6F41589BD63A032C6A99 /* AWSIdentityProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD6330CFDD53887E8A5899D7E0A7D82A /* PKPayment+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD84D230E43441669E89D60F11787C2 /* PKPayment+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FE1F95F519342B9266EB69B23B4336CF /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562BF317D7E3AB23E9F815442EF81553 /* Error.swift */; };
 		FEDFDA5D2CE3E0C60B075127FF9B5473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC409584084225E081A83158F8FE046 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -326,114 +340,115 @@
 		01CF848BD14F4E52C403433BBF441425 /* AWSEXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSEXTScope.m; path = AWSCore/Mantle/extobjc/AWSEXTScope.m; sourceTree = "<group>"; };
 		01D40BC12DF8EEDFF2880BB021981ADB /* AWSClientContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSClientContext.m; path = AWSCore/Service/AWSClientContext.m; sourceTree = "<group>"; };
 		0263DF150B46F9AF8DA79737D97ECFDB /* AWSSynchronizedMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSynchronizedMutableDictionary.h; path = AWSCore/Utility/AWSSynchronizedMutableDictionary.h; sourceTree = "<group>"; };
-		028E4381B6399687DA40F62CFB6FEDE4 /* stp_card_diners@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_diners@3x.png"; path = "Stripe/Resources/Images/stp_card_diners@3x.png"; sourceTree = "<group>"; };
-		033A7F9B6212DDEFEC7BD96061D2DB0C /* STPBankAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPBankAccount.h; path = Stripe/PublicHeaders/STPBankAccount.h; sourceTree = "<group>"; };
 		03DC051E2742E3C7FED2A86F6E069F48 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		047E4C134B341D00F10907DA480D43D7 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		053932F6176CCDEDA60D960AC4EDCD04 /* AWSCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCategory.m; path = AWSCore/Utility/AWSCategory.m; sourceTree = "<group>"; };
 		068DB2EF901387C4E6EE68B159448C51 /* AWSFMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMResultSet.m; path = AWSCore/FMDB/AWSFMResultSet.m; sourceTree = "<group>"; };
 		06DFA304B0B478EC9297D72D64E88020 /* AWSSTSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTSModel.h; path = AWSCore/STS/AWSSTSModel.h; sourceTree = "<group>"; };
+		07777C50326ECC215B911E9DB3277B71 /* stp_card_discover@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_discover@2x.png"; path = "Stripe/Resources/Images/stp_card_discover@2x.png"; sourceTree = "<group>"; };
 		083C06E3796C915EF2D5145BEDC91ECF /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		093E96801CA6A784438EB2B48C9EBC37 /* AWSCognitoDataset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoDataset.m; path = Cognito/AWSCognitoDataset.m; sourceTree = "<group>"; };
-		0BEF244EC6B2DBA83DF7184802830232 /* stp_card_placeholder@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder@2x.png"; path = "Stripe/Resources/Images/stp_card_placeholder@2x.png"; sourceTree = "<group>"; };
-		0C299B42DF6DBE061797DD41ACA882F8 /* STPPaymentCardTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPPaymentCardTextField.m; path = Stripe/UI/STPPaymentCardTextField.m; sourceTree = "<group>"; };
+		0BEB16F6EE0682F2A5CC84AB885D33EB /* STPCheckoutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutViewController.m; path = Stripe/Checkout/STPCheckoutViewController.m; sourceTree = "<group>"; };
 		0CC2AB0EBAE2E1C5B7921D1A8D32B82B /* AWSCognitoHandlers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoHandlers.h; path = Cognito/AWSCognitoHandlers.h; sourceTree = "<group>"; };
-		0DFF8FB2151042C849556A92F1C679F9 /* Stripe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stripe.xcconfig; sourceTree = "<group>"; };
 		0E5B7C948DE8C1C830657BAF38061EAD /* AWSMTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLModel.m; path = AWSCore/Mantle/AWSMTLModel.m; sourceTree = "<group>"; };
 		0F5A16DF69699AD019037648966BF429 /* AWSCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCategory.h; path = AWSCore/Utility/AWSCategory.h; sourceTree = "<group>"; };
 		0F7C311336A576D506CEBF1760646A5D /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
-		119104474750E035E07559094981321C /* Stripe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stripe-prefix.pch"; sourceTree = "<group>"; };
-		12483E50A96F965CE7F64E6B99AA4CCE /* stp_card_cvc_amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc_amex@2x.png"; path = "Stripe/Resources/Images/stp_card_cvc_amex@2x.png"; sourceTree = "<group>"; };
+		12243222CC5F27ED15FC4BAE3520454F /* STPPaymentCardTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPPaymentCardTextField.m; path = Stripe/UI/STPPaymentCardTextField.m; sourceTree = "<group>"; };
 		139478DD923D9E187C5A1FC1C7B09203 /* AWSCognitoConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoConstants.h; path = Cognito/Internal/AWSCognitoConstants.h; sourceTree = "<group>"; };
+		1421A5ACF9B12B6DE83F4A52333E9D6B /* STPCardBrand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardBrand.h; path = Stripe/PublicHeaders/STPCardBrand.h; sourceTree = "<group>"; };
 		1431E37F03EFAD3E7B30A5136850DE69 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		14FEF1EFDA8E0C8F926A61B4BA172319 /* AWSMTLManagedObjectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLManagedObjectAdapter.h; path = AWSCore/Mantle/AWSMTLManagedObjectAdapter.h; sourceTree = "<group>"; };
-		151DF81B6FB84F0638E158EC304D78CF /* STPCheckoutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutViewController.m; path = Stripe/Checkout/STPCheckoutViewController.m; sourceTree = "<group>"; };
 		17DE8CDBA9DA9582E04ABB11DD388B96 /* AWSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSModel.h; path = AWSCore/Utility/AWSModel.h; sourceTree = "<group>"; };
 		183C2F8AD38ADED9D38ED8ED8275632D /* AWSMTLJSONAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLJSONAdapter.h; path = AWSCore/Mantle/AWSMTLJSONAdapter.h; sourceTree = "<group>"; };
+		185D00DC8B3D22CAECB76FE49A2A2360 /* stp_card_cvc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_cvc.png; path = Stripe/Resources/Images/stp_card_cvc.png; sourceTree = "<group>"; };
+		186E51926C8E9858BEEFF1BFE8D6E55E /* STPCardParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardParams.h; path = Stripe/PublicHeaders/STPCardParams.h; sourceTree = "<group>"; };
 		1A83A50A77F8E7F51DCA684B07458E37 /* AWSMTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AWSMTLModel+NSCoding.h"; path = "AWSCore/Mantle/AWSMTLModel+NSCoding.h"; sourceTree = "<group>"; };
 		1A9DF457AAC2B326B2F5F668AD43ABA5 /* AWSMTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLReflection.m; path = AWSCore/Mantle/AWSMTLReflection.m; sourceTree = "<group>"; };
 		1AAA5C986DCE18F8778AD22984B329B5 /* AWSNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSNetworking.m; path = AWSCore/Networking/AWSNetworking.m; sourceTree = "<group>"; };
 		1B9BE1565C983F30FD31CC546E68092A /* AWSCognitoIdentity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentity.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentity.h; sourceTree = "<group>"; };
 		1BE48BAD47EECBAC78C535BF44A3FEED /* AWSMTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSMTLModel+NSCoding.m"; path = "AWSCore/Mantle/AWSMTLModel+NSCoding.m"; sourceTree = "<group>"; };
+		1BF27D083EDDA468EC9F0C4981B1FD61 /* stp_card_cvc_amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_cvc_amex.png; path = Stripe/Resources/Images/stp_card_cvc_amex.png; sourceTree = "<group>"; };
 		1CA24BE9F7632BF837F15F10CFACD3B2 /* AWSCognitoUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoUtil.m; path = Cognito/Internal/AWSCognitoUtil.m; sourceTree = "<group>"; };
 		1D184127B8A443D373FBDC4E178B7C8A /* AWSURLRequestRetryHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSURLRequestRetryHandler.h; path = AWSCore/Serialization/AWSURLRequestRetryHandler.h; sourceTree = "<group>"; };
 		1D47AAEF13FB25671680DF78B98ECD43 /* AWSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSModel.m; path = AWSCore/Utility/AWSModel.m; sourceTree = "<group>"; };
 		1D8ADB29A50BD178C1D40BB219369B42 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3AFECF5A4D955EF155B35DA6715D2D /* STPBankAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPBankAccount.m; path = Stripe/STPBankAccount.m; sourceTree = "<group>"; };
 		1E64E7A087CCAE55EF74BA0AFBD8582D /* NSError+AWSMTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+AWSMTLModelException.h"; path = "AWSCore/Mantle/NSError+AWSMTLModelException.h"; sourceTree = "<group>"; };
 		1E7B12319D58663ABF9F0C098F5A9A5A /* AWSCognito-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSCognito-dummy.m"; sourceTree = "<group>"; };
 		1F77D2B59157A2D1E816BCE802B7CEB9 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
 		2051E50CFAD6F8FE9962A58D7674C948 /* AWSEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSEXTScope.h; path = AWSCore/Mantle/extobjc/AWSEXTScope.h; sourceTree = "<group>"; };
+		22BA46659793199B91827BC9993A53AA /* STPCheckoutInternalUIWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutInternalUIWebViewController.m; path = Stripe/Checkout/STPCheckoutInternalUIWebViewController.m; sourceTree = "<group>"; };
 		231E7B11614157F2804003212E26D7EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		25DC749FDA0BEFB66EB0ABE3AE63F9B0 /* STPAPIClient+ApplePay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPAPIClient+ApplePay.h"; path = "Stripe/PublicHeaders/ApplePay/STPAPIClient+ApplePay.h"; sourceTree = "<group>"; };
-		27DD18141D55554346555A7F7FDD7374 /* StripeError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StripeError.h; path = Stripe/PublicHeaders/StripeError.h; sourceTree = "<group>"; };
-		2837F79AD96B91A6F5831CBF06832713 /* stp_card_visa@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_visa@3x.png"; path = "Stripe/Resources/Images/stp_card_visa@3x.png"; sourceTree = "<group>"; };
+		23C072ED8D12907F81E742626BAA4C19 /* Stripe+ApplePay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Stripe+ApplePay.h"; path = "Stripe/PublicHeaders/ApplePay/Stripe+ApplePay.h"; sourceTree = "<group>"; };
+		2690C2B13DE91D1ABAFF0E1D9BA72140 /* stp_card_placeholder_template.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_placeholder_template.png; path = Stripe/Resources/Images/stp_card_placeholder_template.png; sourceTree = "<group>"; };
 		29672D855B698AFD89FC2DE5FD473CF7 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		29781084F397FDDD2AA5D955AF664E69 /* STPOSXCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPOSXCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPOSXCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
-		29C6396022964FF824A6A080F019284E /* STPAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPAPIClient.m; path = Stripe/STPAPIClient.m; sourceTree = "<group>"; };
 		29E668401A6E1E10A372E1853A4DD3B5 /* AWSFMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDatabase.h; path = AWSCore/FMDB/AWSFMDatabase.h; sourceTree = "<group>"; };
+		2ACA77840B2F5B071A265E51C72B22C7 /* Stripe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Stripe.h; path = Stripe/PublicHeaders/Stripe.h; sourceTree = "<group>"; };
+		2B877B632015BF972B2BA7A37015F605 /* stp_card_discover.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_discover.png; path = Stripe/Resources/Images/stp_card_discover.png; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		2E2967360F742053F897717B605F4EF3 /* stp_card_visa@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_visa@2x.png"; path = "Stripe/Resources/Images/stp_card_visa@2x.png"; sourceTree = "<group>"; };
-		2FF84CFDD0EB991A1429B8ED33750E53 /* STPAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAPIClient.h; path = Stripe/PublicHeaders/STPAPIClient.h; sourceTree = "<group>"; };
+		2D4AAD1BB69DBB1AFACC2C4264F090C9 /* stp_card_diners@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_diners@2x.png"; path = "Stripe/Resources/Images/stp_card_diners@2x.png"; sourceTree = "<group>"; };
 		30C51646BD752657008D8F43847B4244 /* AWSFMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDatabasePool.h; path = AWSCore/FMDB/AWSFMDatabasePool.h; sourceTree = "<group>"; };
 		3213FC2585E9BD6747E1888D96CB6127 /* NSError+AWSMTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+AWSMTLModelException.m"; path = "AWSCore/Mantle/NSError+AWSMTLModelException.m"; sourceTree = "<group>"; };
-		33725027F31C8299D87B9C7CB68D6034 /* STPFormEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPFormEncoder.h; path = Stripe/STPFormEncoder.h; sourceTree = "<group>"; };
 		33F395FAD6C0357420CDB3204007EF78 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		355D914E1ED9A86BB15437EC70EC9C8F /* AWSExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSExecutor.h; path = AWSCore/Bolts/AWSExecutor.h; sourceTree = "<group>"; };
 		35850418B15C2A4E3127CFE6F5A8ECBD /* AWSCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AWSCore.modulemap; sourceTree = "<group>"; };
 		35D8EE496FA3D91FE88552F9621A936C /* AWSXMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSXMLDictionary.m; path = AWSCore/XMLDictionary/AWSXMLDictionary.m; sourceTree = "<group>"; };
 		3821ABB2D02D2C1BE9E2FDF6DDE9847D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		38B609E4F7F8566BBD58E6C6C0D79FFA /* STPAPIConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPAPIConnection.m; path = Stripe/STPAPIConnection.m; sourceTree = "<group>"; };
 		3A2F69FA4A77D9C0C6334915A952A955 /* AWSFMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDB.h; path = AWSCore/FMDB/AWSFMDB.h; sourceTree = "<group>"; };
-		3A886857E9122FD202F219D2CCB72F38 /* stp_card_mastercard.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_mastercard.png; path = Stripe/Resources/Images/stp_card_mastercard.png; sourceTree = "<group>"; };
 		3AF2FB876F20555CAF9EBD63BB18D3D9 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		3B239585220376369FD34D8B36BCCA65 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
-		3B86CF70C688863176D079A87B5D637F /* StripeError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StripeError.m; path = Stripe/StripeError.m; sourceTree = "<group>"; };
+		3B780BBCFF9BE9578A0DBB81BE5591D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D2DEE65B0E5FE9A09A3D46F7CE1F3CA /* AWSCognitoConflict.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoConflict.m; path = Cognito/AWSCognitoConflict.m; sourceTree = "<group>"; };
 		3D31A2A2421802B8EF79F4C41E467B14 /* AWSCognito.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognito.h; path = Cognito/AWSCognito.h; sourceTree = "<group>"; };
-		403AA2E594D9C37016F597C0E1B67193 /* Stripe+ApplePay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Stripe+ApplePay.h"; path = "Stripe/PublicHeaders/ApplePay/Stripe+ApplePay.h"; sourceTree = "<group>"; };
+		3F625E695EC1955F9B0009F2572E84DD /* Stripe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stripe.modulemap; sourceTree = "<group>"; };
+		40477499378C3BAEF99234EAC17149BC /* stp_card_mastercard@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_mastercard@2x.png"; path = "Stripe/Resources/Images/stp_card_mastercard@2x.png"; sourceTree = "<group>"; };
 		413B830BA44AD53456D8D9F210018382 /* AWSCognitoIdentityResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityResources.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityResources.h; sourceTree = "<group>"; };
 		4159C52962F230316B94419F3E90772D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4171AD75862620AEED14B491B177A945 /* stp_card_placeholder_template.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_placeholder_template.png; path = Stripe/Resources/Images/stp_card_placeholder_template.png; sourceTree = "<group>"; };
-		422A4538D05A144025BB1517582D6F96 /* STPFormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPFormTextField.h; path = Stripe/UI/STPFormTextField.h; sourceTree = "<group>"; };
 		42D1A2B067FB5AF1C7C4DC934E9A1B7B /* AWSFMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMDatabaseAdditions.m; path = AWSCore/FMDB/AWSFMDatabaseAdditions.m; sourceTree = "<group>"; };
 		4314BEF91FC7F20D1F3D3178BC4DFFF2 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
+		432A67A6813B352B23FF52611249A266 /* STPToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPToken.m; path = Stripe/STPToken.m; sourceTree = "<group>"; };
 		433C949E4FA2D671EEE4ACCD9DB8D2E3 /* AWSCognitoIdentityResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityResources.m; path = AWSCore/CognitoIdentity/AWSCognitoIdentityResources.m; sourceTree = "<group>"; };
 		43CA254310015DA64CB6FA75E175E7B6 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		442825F7F2B2105B2CA615479D88A0FF /* AWSURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSURLSessionManager.m; path = AWSCore/Networking/AWSURLSessionManager.m; sourceTree = "<group>"; };
-		4698EEE765574F61B0037825123C688C /* Stripe+ApplePay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Stripe+ApplePay.m"; path = "Stripe/ApplePay/Stripe+ApplePay.m"; sourceTree = "<group>"; };
+		477D26B3DC41673ABA2A383556666413 /* stp_card_amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_amex@3x.png"; path = "Stripe/Resources/Images/stp_card_amex@3x.png"; sourceTree = "<group>"; };
+		479D1CC75875E1DD2337C6AFC3B4E4CF /* STPCheckoutInternalUIWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutInternalUIWebViewController.h; path = Stripe/Checkout/STPCheckoutInternalUIWebViewController.h; sourceTree = "<group>"; };
 		4A048FBB723FD62BEE62EBAEDFA0BE94 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		4A1B2F29CF5962C6D316657AE344A082 /* STPFormTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPFormTextField.m; path = Stripe/UI/STPFormTextField.m; sourceTree = "<group>"; };
-		4B3318ADDABDE6E738D81E7290D7B6F1 /* STPCardValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCardValidator.m; path = Stripe/STPCardValidator.m; sourceTree = "<group>"; };
-		4B375DF860A28BF2307217F703286269 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		4C544B99788791D7D69547FE528482D1 /* stp_card_amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_amex@3x.png"; path = "Stripe/Resources/Images/stp_card_amex@3x.png"; sourceTree = "<group>"; };
-		4D790818A415EC6364054E2E9C415076 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DA148536A97774F82AE9189F718B969 /* stp_card_mastercard@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_mastercard@3x.png"; path = "Stripe/Resources/Images/stp_card_mastercard@3x.png"; sourceTree = "<group>"; };
+		4CA40D1625763759BF4AD7E9462D48CB /* STPCategoryLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCategoryLoader.m; path = Stripe/STPCategoryLoader.m; sourceTree = "<group>"; };
 		4DB336C7B4E2F673D2EF820371FC70E9 /* AWSMTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLModel.h; path = AWSCore/Mantle/AWSMTLModel.h; sourceTree = "<group>"; };
-		4E16C4520ED2D2FA8C9E0182DEAECB8E /* STPCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCard.m; path = Stripe/STPCard.m; sourceTree = "<group>"; };
+		4DFA03977F7E049612423C7B5532AE72 /* stp_card_placeholder@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder@3x.png"; path = "Stripe/Resources/Images/stp_card_placeholder@3x.png"; sourceTree = "<group>"; };
+		4E82CFE52494FA29DF8714565DD7BB9B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		4F5880976BCA60D9FC9FD896060A18D6 /* STPAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPAPIClient.m; path = Stripe/STPAPIClient.m; sourceTree = "<group>"; };
 		4F8800B748EF012E20B8DDD1D02F558D /* AWSCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCore.h; path = AWSCore/AWSCore.h; sourceTree = "<group>"; };
+		4FB6E05692B1408DF1FBD0B0085D6496 /* STPAPIClient+ApplePay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "STPAPIClient+ApplePay.m"; path = "Stripe/ApplePay/STPAPIClient+ApplePay.m"; sourceTree = "<group>"; };
 		5120D29704A03A4EA11A76CC57531131 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		5164AE0CB91D65DE412E1026D13C43A7 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
+		51AC9C28D7E7EEA8DE32E0784EA30899 /* stp_card_visa@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_visa@2x.png"; path = "Stripe/Resources/Images/stp_card_visa@2x.png"; sourceTree = "<group>"; };
+		52822D6D02802C979AF4FE50C2359383 /* STPAPIPostRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAPIPostRequest.h; path = Stripe/STPAPIPostRequest.h; sourceTree = "<group>"; };
 		52C393C52C7BD97C55E941E896C6D34C /* AWSCognitoRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoRecord.h; path = Cognito/AWSCognitoRecord.h; sourceTree = "<group>"; };
 		553F3A2602ACA91EE5DB37390F4BF211 /* AWSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLogging.h; path = AWSCore/Utility/AWSLogging.h; sourceTree = "<group>"; };
 		562BF317D7E3AB23E9F815442EF81553 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		5696D46E6EE0094A5D7986649CBEEB26 /* STPColorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPColorUtils.h; path = Stripe/Checkout/STPColorUtils.h; sourceTree = "<group>"; };
+		57554439628D658531094521DE0A86DB /* STPBankAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPBankAccount.h; path = Stripe/PublicHeaders/STPBankAccount.h; sourceTree = "<group>"; };
 		575AC697A3DBCFECFF9B92588F64C19B /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		57850EDCB8D02A2245BE985435ADFBEE /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		579B44DB1CBCC5EEEBD335CFFDEE5105 /* AWSFMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMResultSet.h; path = AWSCore/FMDB/AWSFMResultSet.h; sourceTree = "<group>"; };
 		57BF40260C13C8803A7C8DBC811278A6 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		58D8EC0B9F742CFB1C491518CB87B3BF /* STPIOSCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPIOSCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPIOSCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
 		59C5C2747243C7710A87FCBD2818B46A /* AWSEXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSEXTRuntimeExtensions.h; path = AWSCore/Mantle/extobjc/AWSEXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		59DEC9B19F1866F7D803ED834CE6353A /* AWSIdentityProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSIdentityProvider.m; path = AWSCore/Authentication/AWSIdentityProvider.m; sourceTree = "<group>"; };
 		59F58B4264F58D12AE0C1DCEC2B44AFB /* NSArray+AWSMTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+AWSMTLManipulationAdditions.m"; path = "AWSCore/Mantle/NSArray+AWSMTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		5A334D9A98E0FB48EBE2FCECFC4DA2F6 /* stp_card_cvc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc@2x.png"; path = "Stripe/Resources/Images/stp_card_cvc@2x.png"; sourceTree = "<group>"; };
 		5A4CF8D04A32417F315D79387D16BC96 /* AWSmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSmetamacros.h; path = AWSCore/Mantle/extobjc/AWSmetamacros.h; sourceTree = "<group>"; };
 		5AA65F444356EB50B8613EDE97FEEEE5 /* NSObject+AWSMTLComparisonAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AWSMTLComparisonAdditions.h"; path = "AWSCore/Mantle/NSObject+AWSMTLComparisonAdditions.h"; sourceTree = "<group>"; };
+		5AD1BC07FC057A950083ADD2AA1BE8AD /* Stripe+ApplePay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Stripe+ApplePay.m"; path = "Stripe/ApplePay/Stripe+ApplePay.m"; sourceTree = "<group>"; };
 		5AFC53648DB02B126A2E8B7D7118820C /* AWSCognitoRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoRecord.m; path = Cognito/AWSCognitoRecord.m; sourceTree = "<group>"; };
 		5BA05B8E601904C18E4DCACE3323CFE0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		5C6C64C539089F0A9537043E84BAE7B6 /* stp_card_diners.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_diners.png; path = Stripe/Resources/Images/stp_card_diners.png; sourceTree = "<group>"; };
 		5D4D99C30B7D2E5906E963CFA39CD97C /* AWSXMLDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSXMLDictionary.h; path = AWSCore/XMLDictionary/AWSXMLDictionary.h; sourceTree = "<group>"; };
-		5D67A10ABB58DCB724067EB442D32CF9 /* STPOSXCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPOSXCheckoutWebViewAdapter.m; path = Stripe/Checkout/STPOSXCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		5D98F6F61D090660A4A9DA27422E2CD4 /* stp_card_cvc_amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc_amex@2x.png"; path = "Stripe/Resources/Images/stp_card_cvc_amex@2x.png"; sourceTree = "<group>"; };
+		5DB2FD64F385F13ACA8BE018632CF646 /* STPAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAPIClient.h; path = Stripe/PublicHeaders/STPAPIClient.h; sourceTree = "<group>"; };
 		5DEB1FCE33EB805D44FECB95033518CC /* AWSCognitoConflict_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoConflict_Internal.h; path = Cognito/Internal/AWSCognitoConflict_Internal.h; sourceTree = "<group>"; };
-		5E9EFD05D5BA677A862E9E6668E04DC7 /* STPStrictURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPStrictURLProtocol.m; path = Stripe/Checkout/STPStrictURLProtocol.m; sourceTree = "<group>"; };
+		5FD84D230E43441669E89D60F11787C2 /* PKPayment+Stripe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PKPayment+Stripe.h"; path = "Stripe/ApplePay/PKPayment+Stripe.h"; sourceTree = "<group>"; };
 		6056A46E839113625DD39FD0D34757F5 /* AWSCognitoSQLiteManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoSQLiteManager.h; path = Cognito/Internal/AWSCognitoSQLiteManager.h; sourceTree = "<group>"; };
+		60929934B407438F74BC9466ABCEC934 /* stp_card_jcb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_jcb.png; path = Stripe/Resources/Images/stp_card_jcb.png; sourceTree = "<group>"; };
 		612E983B3D5B71DB89CD99F98B85455A /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m"; path = "AWSCore/Mantle/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
 		62D2A24DB1C558D9C7C4A44AD972BF28 /* AWSCognitoIdentityService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityService.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityService.h; sourceTree = "<group>"; };
 		6389ADF0CD7D9CDFDA350DB9D1C763B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -442,184 +457,197 @@
 		63F0E10BD2132BA87FA9DFE594996E78 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64826C61889647E9F0CC08FDEDA74D45 /* AWSCognitoService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoService.h; path = Cognito/AWSCognitoService.h; sourceTree = "<group>"; };
 		65A2B926D7F9E8D3A03E3429A4BF1911 /* NSObject+AWSMTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AWSMTLComparisonAdditions.m"; path = "AWSCore/Mantle/NSObject+AWSMTLComparisonAdditions.m"; sourceTree = "<group>"; };
-		66D455E0D683EAEB259930769D354085 /* Stripe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stripe-dummy.m"; sourceTree = "<group>"; };
-		670BA5102C51E7914404AABB892098AB /* STPCardValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardValidator.h; path = Stripe/PublicHeaders/STPCardValidator.h; sourceTree = "<group>"; };
-		681B3C71BCC3DF1D7D87CA3346EAFD4A /* stp_card_placeholder.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_placeholder.png; path = Stripe/Resources/Images/stp_card_placeholder.png; sourceTree = "<group>"; };
 		68CB9746B4F3E465026E62A299AA3B1E /* AWSCognitoConflict.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoConflict.h; path = Cognito/AWSCognitoConflict.h; sourceTree = "<group>"; };
+		692DE840780D0DDC91EE51856BB42D29 /* stp_card_placeholder_template@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder_template@3x.png"; path = "Stripe/Resources/Images/stp_card_placeholder_template@3x.png"; sourceTree = "<group>"; };
 		6A0C9EDF8B743D0D20BD915423FB1F14 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
 		6A53119E2008B9AD201A3004B1B25617 /* AWSSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSignature.h; path = AWSCore/Authentication/AWSSignature.h; sourceTree = "<group>"; };
 		6A5B60C871AF1FA00A5068C095C4CBB3 /* AWSTMMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTMMemoryCache.h; path = AWSCore/TMCache/AWSTMMemoryCache.h; sourceTree = "<group>"; };
 		6A621001EE459A56244455BCBA72D39A /* AWSCognito-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognito-prefix.pch"; sourceTree = "<group>"; };
 		6AB8F5BBAF6D8F33F8C63321909BC553 /* AWSCognitoIdentityModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityModel.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityModel.h; sourceTree = "<group>"; };
 		6B0722C41EF49728685C2F35F6534C7C /* AWSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSService.m; path = AWSCore/Service/AWSService.m; sourceTree = "<group>"; };
-		6C6EA8677DC5357126DBE2B40EED691C /* stp_card_discover.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_discover.png; path = Stripe/Resources/Images/stp_card_discover.png; sourceTree = "<group>"; };
 		6FE9641DF7FE6F41589BD63A032C6A99 /* AWSIdentityProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIdentityProvider.h; path = AWSCore/Authentication/AWSIdentityProvider.h; sourceTree = "<group>"; };
-		703C50D89DCF8ACE9D3A62DABAE9C0CF /* STPIOSCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPIOSCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPIOSCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
 		703DB057EA85DC94AFE0F5BA26A53BDE /* AWSSTSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSTSService.m; path = AWSCore/STS/AWSSTSService.m; sourceTree = "<group>"; };
 		704D2E911D309F5523A7E3EE1761C845 /* AWSMTLValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLValueTransformer.h; path = AWSCore/Mantle/AWSMTLValueTransformer.h; sourceTree = "<group>"; };
 		722C93FA828AB1EF41890E97ED712CE5 /* AWSTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTask.m; path = AWSCore/Bolts/AWSTask.m; sourceTree = "<group>"; };
 		7254502466524E6C606E7329FB7552AC /* AWSCognitoSyncService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoSyncService.h; path = CognitoSync/AWSCognitoSyncService.h; sourceTree = "<group>"; };
+		73843BD96DB3D3DBFFF40B9FFC78996F /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = Stripe/Fabric/Fabric.h; sourceTree = "<group>"; };
+		7457698BE412915F6C4CA0084474A0EA /* STPCheckoutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutViewController.h; path = Stripe/PublicHeaders/Checkout/STPCheckoutViewController.h; sourceTree = "<group>"; };
+		755ED15724A3E9F13F4389CF9539CE98 /* stp_card_mastercard.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_mastercard.png; path = Stripe/Resources/Images/stp_card_mastercard.png; sourceTree = "<group>"; };
 		75AC318C24F63E6D23E1A6C41FA9422F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7613928E82298AEEDAD2D543A740077E /* AWSTMMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTMMemoryCache.m; path = AWSCore/TMCache/AWSTMMemoryCache.m; sourceTree = "<group>"; };
 		76319C15586C8D02D8CC71D30A45FC3C /* AWSCognitoIdentityService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityService.m; path = AWSCore/CognitoIdentity/AWSCognitoIdentityService.m; sourceTree = "<group>"; };
+		77C22FEC0EC442335CC4AC7CB6824F86 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		78DF889938964A940ADC6DF18365B939 /* AWSURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSURLRequestSerialization.m; path = AWSCore/Serialization/AWSURLRequestSerialization.m; sourceTree = "<group>"; };
+		790363D76A6827281CDE32C0313AF169 /* stp_card_placeholder_template@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder_template@2x.png"; path = "Stripe/Resources/Images/stp_card_placeholder_template@2x.png"; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
 		7CD4DFFBE2727B4CC54634EDADC6314E /* AWSCognitoSyncModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoSyncModel.m; path = CognitoSync/AWSCognitoSyncModel.m; sourceTree = "<group>"; };
 		7D83F90D945E8F963E1EDA4410CE46FE /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		7E341C508B1A01D12217797CF4CA630D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		7FEBD7192BB0190F17247DD8AD9FAFD2 /* stp_card_mastercard@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_mastercard@2x.png"; path = "Stripe/Resources/Images/stp_card_mastercard@2x.png"; sourceTree = "<group>"; };
+		7EDB9A806A36B1682A7BFECD39508C61 /* STPStrictURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPStrictURLProtocol.m; path = Stripe/Checkout/STPStrictURLProtocol.m; sourceTree = "<group>"; };
 		80B059748E2D0BEBF8D0EA7E3B254E10 /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
+		810805068CBC1534F2D46618C8ADC9C9 /* Stripe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stripe.xcconfig; sourceTree = "<group>"; };
 		814D3F07732DD9945F71A872EE1F56E2 /* AWSMTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLValueTransformer.m; path = AWSCore/Mantle/AWSMTLValueTransformer.m; sourceTree = "<group>"; };
 		82B2A9FFF2D0F0938663EF4F91F0CA55 /* AWSClientContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSClientContext.h; path = AWSCore/Service/AWSClientContext.h; sourceTree = "<group>"; };
-		8361B73896B6B54636F0185F7F5E6C29 /* stp_card_jcb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_jcb@2x.png"; path = "Stripe/Resources/Images/stp_card_jcb@2x.png"; sourceTree = "<group>"; };
+		82C18C8195F12B32B60821DEA979AAA1 /* StripeError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StripeError.m; path = Stripe/StripeError.m; sourceTree = "<group>"; };
 		8444136E76F6D49EA85AC0B6C7D6F369 /* AWSSTSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSTSModel.m; path = AWSCore/STS/AWSSTSModel.m; sourceTree = "<group>"; };
-		847464D818031C23AE6B32B87E115FF6 /* STPCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
-		84E603479FFABD644D8B4D454F423DB8 /* STPPaymentCardTextFieldViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPPaymentCardTextFieldViewModel.h; path = Stripe/UI/STPPaymentCardTextFieldViewModel.h; sourceTree = "<group>"; };
-		8604397893444D6A4547A0F423867045 /* stp_card_jcb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_jcb@3x.png"; path = "Stripe/Resources/Images/stp_card_jcb@3x.png"; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		87E17193FD79E243761328AD990B1D68 /* stp_card_cvc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_cvc.png; path = Stripe/Resources/Images/stp_card_cvc.png; sourceTree = "<group>"; };
 		893413229E25E359DF2477E7A27D02BD /* AWSMantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMantle.h; path = AWSCore/Mantle/AWSMantle.h; sourceTree = "<group>"; };
 		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		8966E883A1F70A0ECA50DCC113793806 /* AWSFMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMDatabasePool.m; path = AWSCore/FMDB/AWSFMDatabasePool.m; sourceTree = "<group>"; };
-		89943644F56B4C13F81F6C75C0F64801 /* STPCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCard.h; path = Stripe/PublicHeaders/STPCard.h; sourceTree = "<group>"; };
-		89F8DFFAF62F49ECF28092C80DD5BC7F /* STPToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPToken.m; path = Stripe/STPToken.m; sourceTree = "<group>"; };
 		8A3EC7AEB215578FFD3971012ECCC571 /* AWSCredentialsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCredentialsProvider.m; path = AWSCore/Authentication/AWSCredentialsProvider.m; sourceTree = "<group>"; };
-		8AA35859AFD5CF6DE7F2F7C223F618C5 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Images; path = Stripe/Resources/Images; sourceTree = "<group>"; };
 		8B1A166F1267E3B0018C76AC298AF87E /* Optimizely.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Optimizely.framework; sourceTree = "<group>"; };
-		8C532CBAA333748A961F57008DF6C697 /* STPIOSCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPIOSCheckoutWebViewAdapter.m; path = Stripe/Checkout/STPIOSCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		8B5843577D8038467BCCFC272A53BC64 /* STPFormEncodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPFormEncodable.h; path = Stripe/PublicHeaders/STPFormEncodable.h; sourceTree = "<group>"; };
+		8B586B96EDBCD3E97D93211CD346FFCF /* stp_card_discover@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_discover@3x.png"; path = "Stripe/Resources/Images/stp_card_discover@3x.png"; sourceTree = "<group>"; };
+		8BE7417C228E8C3198CB0C69F6EADF6C /* STPPaymentCardTextFieldViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPPaymentCardTextFieldViewModel.h; path = Stripe/UI/STPPaymentCardTextFieldViewModel.h; sourceTree = "<group>"; };
 		8CFA2A57DCA027B57C03B090F5A506B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7A71D48AFDE28520497132452B7690 /* STPCardValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCardValidator.m; path = Stripe/STPCardValidator.m; sourceTree = "<group>"; };
 		8D865EC06905774CB1CD9AB21FE9B4E3 /* AWSMTLReflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLReflection.h; path = AWSCore/Mantle/AWSMTLReflection.h; sourceTree = "<group>"; };
-		8E284F27DA0C4B9B2EF494764AFCD3EE /* STPCheckoutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutViewController.h; path = Stripe/PublicHeaders/Checkout/STPCheckoutViewController.h; sourceTree = "<group>"; };
+		8DA718A9E9B79B1B741E9CAFBAA61349 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Images; path = Stripe/Resources/Images; sourceTree = "<group>"; };
+		8DDAB847DB1A832A54F3BFF376B1A193 /* STPPaymentCardTextFieldViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPPaymentCardTextFieldViewModel.m; path = Stripe/UI/STPPaymentCardTextFieldViewModel.m; sourceTree = "<group>"; };
 		8E428707DE4E0EA11F154441BF5018C5 /* AWSSTSResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSTSResources.m; path = AWSCore/STS/AWSSTSResources.m; sourceTree = "<group>"; };
-		8F690B7BEA5B68ACC22AED07BF392790 /* Stripe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Stripe.h; path = Stripe/PublicHeaders/Stripe.h; sourceTree = "<group>"; };
 		9050BA93901BA928FF92FAE10D4C0A43 /* NSValueTransformer+AWSMTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+AWSMTLInversionAdditions.h"; path = "AWSCore/Mantle/NSValueTransformer+AWSMTLInversionAdditions.h"; sourceTree = "<group>"; };
 		91D8FCBC3E0DC07726D125D610196B46 /* AWSCognitoSyncModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoSyncModel.h; path = CognitoSync/AWSCognitoSyncModel.h; sourceTree = "<group>"; };
+		920E65E6C48E0378FC1C7D6A3E065436 /* STPCardValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardValidator.h; path = Stripe/PublicHeaders/STPCardValidator.h; sourceTree = "<group>"; };
+		92385551FB6FD219F698E03B7E60431E /* stp_card_amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_amex.png; path = Stripe/Resources/Images/stp_card_amex.png; sourceTree = "<group>"; };
 		92BC1F9D8A4F447B23B4AC323EECF0F6 /* AWSServiceEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSServiceEnum.h; path = AWSCore/Service/AWSServiceEnum.h; sourceTree = "<group>"; };
-		941DA5C31372F7C26CAA9F61DF8F25C7 /* stp_card_cvc_amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc_amex@3x.png"; path = "Stripe/Resources/Images/stp_card_cvc_amex@3x.png"; sourceTree = "<group>"; };
 		9421881BF9A40C648A2D1C4DD79C04FA /* AWSTMCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTMCache.h; path = AWSCore/TMCache/AWSTMCache.h; sourceTree = "<group>"; };
 		9460E3E175B44B389609CAF04DFF632A /* AWSSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSerialization.h; path = AWSCore/Serialization/AWSSerialization.h; sourceTree = "<group>"; };
 		96CCCD8FE2AB00A6B2F0EC9187E9057A /* AWSReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSReachability.h; path = AWSCore/Reachability/AWSReachability.h; sourceTree = "<group>"; };
 		96EE8E9246B534B391C71C94DB29ECC0 /* AWSURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSURLSessionManager.h; path = AWSCore/Networking/AWSURLSessionManager.h; sourceTree = "<group>"; };
 		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
 		9795AD8742A24982F2F18AB2D19CBAE8 /* AWSCognitoSyncService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoSyncService.m; path = CognitoSync/AWSCognitoSyncService.m; sourceTree = "<group>"; };
+		97EF9C98F568FCE0E832F14F153811F5 /* stp_card_cvc_amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc_amex@3x.png"; path = "Stripe/Resources/Images/stp_card_cvc_amex@3x.png"; sourceTree = "<group>"; };
 		980647D5FADE83638D9C34059D05F3A1 /* AWSURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSURLResponseSerialization.m; path = AWSCore/Serialization/AWSURLResponseSerialization.m; sourceTree = "<group>"; };
-		9965B14B5B40A3375F458520DEEEC986 /* STPColorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPColorUtils.m; path = Stripe/Checkout/STPColorUtils.m; sourceTree = "<group>"; };
-		9B50C9DBEEDECF64F9C21BE8F64CCB2E /* STPToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPToken.h; path = Stripe/PublicHeaders/STPToken.h; sourceTree = "<group>"; };
-		9C035CE15BE62B5AF0D3C347221AE8BD /* stp_card_placeholder@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder@3x.png"; path = "Stripe/Resources/Images/stp_card_placeholder@3x.png"; sourceTree = "<group>"; };
+		9A05CF686474D2BA25115AD67DDE1A32 /* STPAPIClient+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPAPIClient+Private.h"; path = "Stripe/STPAPIClient+Private.h"; sourceTree = "<group>"; };
 		9CF237E542B5523827482CC3887275B6 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		9D3A08DC5B966928167C2D3DBDADE26C /* STPOSXCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPOSXCheckoutWebViewAdapter.m; path = Stripe/Checkout/STPOSXCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		9DA5B3FA85A06B77B240F79F6154C14C /* STPFormEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPFormEncoder.h; path = Stripe/STPFormEncoder.h; sourceTree = "<group>"; };
 		9E73FFDBB8C37C4A328D3B6956981F1A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAFE5674B3650FDD3E8830A947E620B /* AWSCognitoDataset_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoDataset_Internal.h; path = Cognito/Internal/AWSCognitoDataset_Internal.h; sourceTree = "<group>"; };
-		A007595456EDF2398C0DF66C14F7398A /* stp_card_cvc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc@3x.png"; path = "Stripe/Resources/Images/stp_card_cvc@3x.png"; sourceTree = "<group>"; };
 		A0460B5E0355770DB0DF3472EBB9D55C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0935E904996D6B8B97D90443390648B /* stp_card_cvc_amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_cvc_amex.png; path = Stripe/Resources/Images/stp_card_cvc_amex.png; sourceTree = "<group>"; };
-		A173A69058E22E79ED891EB0F4E33D5D /* stp_card_discover@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_discover@2x.png"; path = "Stripe/Resources/Images/stp_card_discover@2x.png"; sourceTree = "<group>"; };
-		A1D31C062ADFDE179E83D6575445B118 /* STPAPIConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAPIConnection.h; path = Stripe/STPAPIConnection.h; sourceTree = "<group>"; };
+		A3007F02EA4978CC12EFF596EC9914EF /* STPOSXCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPOSXCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPOSXCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
+		A495F23B8CC2A1034BFED3DFCB79FF97 /* STPCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
 		A4A34C5581CD31A9E798D6AD6D2164F8 /* AWSEXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSEXTRuntimeExtensions.m; path = AWSCore/Mantle/extobjc/AWSEXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		A519407A58C9256BEAC6E0156D0A1399 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		A574225358B4F8C22B9FE980CAC69790 /* STPCardBrand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardBrand.h; path = Stripe/PublicHeaders/STPCardBrand.h; sourceTree = "<group>"; };
+		A619A8B1EF2C9AB5F196929EBD136189 /* stp_card_jcb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_jcb@2x.png"; path = "Stripe/Resources/Images/stp_card_jcb@2x.png"; sourceTree = "<group>"; };
 		A61EE167928687DEC8EEB85596E5EDB4 /* AWSBolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSBolts.m; path = AWSCore/Bolts/AWSBolts.m; sourceTree = "<group>"; };
+		A62E87EAB4B3224533C08A01EBC0F0D2 /* STPToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPToken.h; path = Stripe/PublicHeaders/STPToken.h; sourceTree = "<group>"; };
+		A6FE54F2C1616DFDB2DFBB9920316376 /* StripeError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StripeError.h; path = Stripe/PublicHeaders/StripeError.h; sourceTree = "<group>"; };
 		A8A968ABDFF86912E193F3E187B174E7 /* AWSReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSReachability.m; path = AWSCore/Reachability/AWSReachability.m; sourceTree = "<group>"; };
 		A9713B8801A57225A23EE416C7C0939B /* AWSTMCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTMCache.m; path = AWSCore/TMCache/AWSTMCache.m; sourceTree = "<group>"; };
 		A976C08C2A4801C6A4ED5718EA54AC1D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		ABEE74680B716BF9EDE792EF5520F59D /* STPPaymentCardTextFieldViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPPaymentCardTextFieldViewModel.m; path = Stripe/UI/STPPaymentCardTextFieldViewModel.m; sourceTree = "<group>"; };
+		A9E8306FBCF0E45D3BF2DF8B1AB1EDDE /* PKPayment+Stripe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PKPayment+Stripe.m"; path = "Stripe/ApplePay/PKPayment+Stripe.m"; sourceTree = "<group>"; };
+		ABA6E063172EAE610656F218BA6A5701 /* NSDictionary+Stripe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Stripe.m"; path = "Stripe/NSDictionary+Stripe.m"; sourceTree = "<group>"; };
+		AD705AA524ED6AC0E1B34A7CDFAEDF1C /* STPColorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPColorUtils.h; path = Stripe/Checkout/STPColorUtils.h; sourceTree = "<group>"; };
+		ADB1A2300F823F6C9FF4FC512F023915 /* stp_card_diners.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_diners.png; path = Stripe/Resources/Images/stp_card_diners.png; sourceTree = "<group>"; };
+		AE2AEF68107EC5D1EFF7BD607FC20963 /* stp_card_placeholder@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder@2x.png"; path = "Stripe/Resources/Images/stp_card_placeholder@2x.png"; sourceTree = "<group>"; };
 		AEC628B9A5474198609303BEBE1FB518 /* AWSSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSerialization.m; path = AWSCore/Serialization/AWSSerialization.m; sourceTree = "<group>"; };
-		B06D650C233C6AAB670E9F023F694CF4 /* STPFormEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPFormEncoder.m; path = Stripe/STPFormEncoder.m; sourceTree = "<group>"; };
+		AF20D0A99A213B0159D6927E5162F9C2 /* STPStrictURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPStrictURLProtocol.h; path = Stripe/Checkout/STPStrictURLProtocol.h; sourceTree = "<group>"; };
+		B17413BB31A24032D0B77BAD387506FE /* STPCategoryLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCategoryLoader.h; path = Stripe/STPCategoryLoader.h; sourceTree = "<group>"; };
 		B1B5FD602459DD802327F299AEAE7FC1 /* AWSURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSURLResponseSerialization.h; path = AWSCore/Serialization/AWSURLResponseSerialization.h; sourceTree = "<group>"; };
 		B23BBB3DE8BE68083396DA5F3CF59F86 /* AWSTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTask.h; path = AWSCore/Bolts/AWSTask.h; sourceTree = "<group>"; };
-		B32A07C3E1687DFC59BA6CF5B989E48D /* stp_card_discover@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_discover@3x.png"; path = "Stripe/Resources/Images/stp_card_discover@3x.png"; sourceTree = "<group>"; };
-		B4E9EB6EFB4F8680897EA8C762F3D7B5 /* STPStrictURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPStrictURLProtocol.h; path = Stripe/Checkout/STPStrictURLProtocol.h; sourceTree = "<group>"; };
+		B550613F5E814AA9DFCD894D969404C1 /* STPBankAccountParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPBankAccountParams.h; path = Stripe/PublicHeaders/STPBankAccountParams.h; sourceTree = "<group>"; };
 		B5A0C670AB4FE747E67D6D2A7240D212 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		B5B62D2288ED37E4127EF4341894425C /* AWSCognitoDataset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoDataset.h; path = Cognito/AWSCognitoDataset.h; sourceTree = "<group>"; };
 		B626D29E127CC9680655E7D727D03667 /* AWSEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSEXTKeyPathCoding.h; path = AWSCore/Mantle/extobjc/AWSEXTKeyPathCoding.h; sourceTree = "<group>"; };
 		B69F1633E6AEE0A148C3FC6F9290AB24 /* AWSTMDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTMDiskCache.h; path = AWSCore/TMCache/AWSTMDiskCache.h; sourceTree = "<group>"; };
 		B6A7947EF95034037E98F40AEB132035 /* Stripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8C74655BF7F9D9DF4B20D2CB5DBD699 /* stp_card_amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_amex.png; path = Stripe/Resources/Images/stp_card_amex.png; sourceTree = "<group>"; };
+		B7EECC1EE10716929E10C8AEBB6E0604 /* STPIOSCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPIOSCheckoutWebViewAdapter.m; path = Stripe/Checkout/STPIOSCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		B8912931C66D93D42279CEC9B657B052 /* STPFormEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPFormEncoder.m; path = Stripe/STPFormEncoder.m; sourceTree = "<group>"; };
 		B9AB9C9DA5339ADA202BCA59F8C88E09 /* AWSValidation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSValidation.m; path = AWSCore/Serialization/AWSValidation.m; sourceTree = "<group>"; };
 		BA3759B5BA97790A3A4A4DBFC1845026 /* AWSExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSExecutor.m; path = AWSCore/Bolts/AWSExecutor.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA812DB8306A3FF9826B263695D1EF42 /* STPCheckoutInternalUIWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutInternalUIWebViewController.h; path = Stripe/Checkout/STPCheckoutInternalUIWebViewController.h; sourceTree = "<group>"; };
 		BAC208B627F3CE8EB3885440428269FE /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		BAD3CA8B8BCEBBCB6B3A5A47997588AA /* AWSTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTaskCompletionSource.h; path = AWSCore/Bolts/AWSTaskCompletionSource.h; sourceTree = "<group>"; };
-		BDCB24B05A672AFB1ACB0393169C5C92 /* Stripe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stripe-umbrella.h"; sourceTree = "<group>"; };
-		BEAEE6726FFB14E00A93E4FD1FC2061B /* STPAPIClient+ApplePay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "STPAPIClient+ApplePay.m"; path = "Stripe/ApplePay/STPAPIClient+ApplePay.m"; sourceTree = "<group>"; };
 		BF0F98234621C4732E26B6672E015062 /* AWSCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSCore-dummy.m"; sourceTree = "<group>"; };
 		BF97D783E454E95A8A5FF30D76E52D8F /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
 		C2B52C319C41E96085029B172400550C /* AWSCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCore.xcconfig; sourceTree = "<group>"; };
-		C31EACD14D7E191C591125F81EA565AA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C39CDABAC2C86E5D096968EFDE344C02 /* STPAPIResponseDecodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAPIResponseDecodable.h; path = Stripe/PublicHeaders/STPAPIResponseDecodable.h; sourceTree = "<group>"; };
+		C44C10A46EAD54E2DEF62B67E94C1AEC /* Stripe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stripe-prefix.pch"; sourceTree = "<group>"; };
 		C646D0F136023BFC0E29241913BA8109 /* AWSCognito.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AWSCognito.modulemap; sourceTree = "<group>"; };
 		C6CBC7BF912B41C55F7018E03F6AEF97 /* AWSSTSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTSService.h; path = AWSCore/STS/AWSSTSService.h; sourceTree = "<group>"; };
 		C7501535B91F3C0BF6FBD88F625F73D5 /* AWSCognitoSyncResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoSyncResources.m; path = CognitoSync/AWSCognitoSyncResources.m; sourceTree = "<group>"; };
-		CAE2E48802E8597447649CDAE13B45BA /* STPCardValidationState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardValidationState.h; path = Stripe/PublicHeaders/STPCardValidationState.h; sourceTree = "<group>"; };
+		C7E61C8C3B485674C9F58F3CBAF639FE /* stp_card_amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_amex@2x.png"; path = "Stripe/Resources/Images/stp_card_amex@2x.png"; sourceTree = "<group>"; };
 		CB5B68D27A95CA21C51082D3BC3EB5EE /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		CC9B2FEF7FAFBE9010E30766434CDE6E /* AWSGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSGZIP.m; path = AWSCore/GZIP/AWSGZIP.m; sourceTree = "<group>"; };
 		CD0DF4966B783F3F571536872F35BAA4 /* AWSSignature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSignature.m; path = AWSCore/Authentication/AWSSignature.m; sourceTree = "<group>"; };
-		CD9E8C3FC07EBE9EEA42CECC3DAB6C63 /* STPCheckoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutDelegate.h; path = Stripe/Checkout/STPCheckoutDelegate.h; sourceTree = "<group>"; };
+		CDF68D8B4D8F20E2937C4BCF1CBDB795 /* Fabric+FABKits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fabric+FABKits.h"; path = "Stripe/Fabric/Fabric+FABKits.h"; sourceTree = "<group>"; };
 		CE55CAF26BD5F68AF311A332E8722C4C /* AWSCognito-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognito-umbrella.h"; sourceTree = "<group>"; };
-		CEBE05C11100E58FD5DE0648389A0227 /* Stripe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stripe.modulemap; sourceTree = "<group>"; };
-		CF4C4C1BC7BA1A4A8BA92A27B32A0CE8 /* PKPayment+Stripe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PKPayment+Stripe.m"; path = "Stripe/ApplePay/PKPayment+Stripe.m"; sourceTree = "<group>"; };
 		CFE6A8E112BD1585E5125B75BE8E3182 /* AWSGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSGZIP.h; path = AWSCore/GZIP/AWSGZIP.h; sourceTree = "<group>"; };
 		CFEDB9959701112ADC6150CFF73B98F1 /* AWSFMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMDatabase.m; path = AWSCore/FMDB/AWSFMDatabase.m; sourceTree = "<group>"; };
-		D03501E886CBBA08D1B9DECB9735DD7E /* STPBankAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPBankAccount.m; path = Stripe/STPBankAccount.m; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0A5BDB53EE0CD524766390CBEC71BBC /* AWSUICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSUICKeyChainStore.h; path = AWSCore/UICKeyChainStore/AWSUICKeyChainStore.h; sourceTree = "<group>"; };
 		D0D1E88A8316ED1E3C1C76C80D7F7490 /* AWSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSService.h; path = AWSCore/Service/AWSService.h; sourceTree = "<group>"; };
-		D0DA321AE131FC83E67739996AD5E13D /* STPPaymentCardTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPPaymentCardTextField.h; path = Stripe/PublicHeaders/UI/STPPaymentCardTextField.h; sourceTree = "<group>"; };
-		D23D3AA3F53834851494F9C0209E1DBF /* stp_card_placeholder_template@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder_template@2x.png"; path = "Stripe/Resources/Images/stp_card_placeholder_template@2x.png"; sourceTree = "<group>"; };
+		D144FB0A50206D2509E59934255D5CE0 /* stp_card_visa@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_visa@3x.png"; path = "Stripe/Resources/Images/stp_card_visa@3x.png"; sourceTree = "<group>"; };
+		D21277E86AE9407333EB8C7009A410A7 /* STPColorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPColorUtils.m; path = Stripe/Checkout/STPColorUtils.m; sourceTree = "<group>"; };
 		D26E9C51E315CEF21F0A975C34B67972 /* AWSCognitoSQLiteManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoSQLiteManager.m; path = Cognito/Internal/AWSCognitoSQLiteManager.m; sourceTree = "<group>"; };
+		D2AF22800AAF21330A6B33130852FD9C /* STPCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCard.h; path = Stripe/PublicHeaders/STPCard.h; sourceTree = "<group>"; };
 		D3545C9217898E953B73F5ECBEAA891F /* NSDictionary+AWSMTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+AWSMTLManipulationAdditions.h"; path = "AWSCore/Mantle/NSDictionary+AWSMTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		D423DE1EF54DB6F95C388F6893FC4D10 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
-		D50C2539848801AF36A3FC1C8F627D5C /* stp_card_jcb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_jcb.png; path = Stripe/Resources/Images/stp_card_jcb.png; sourceTree = "<group>"; };
+		D43C367E04CE46950C1BB2716354F81C /* stp_card_mastercard@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_mastercard@3x.png"; path = "Stripe/Resources/Images/stp_card_mastercard@3x.png"; sourceTree = "<group>"; };
+		D460E500F402478DB9EA3565A84CB24D /* STPAPIPostRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPAPIPostRequest.m; path = Stripe/STPAPIPostRequest.m; sourceTree = "<group>"; };
+		D48E95DC7A2997FC246B6C7C61DD3412 /* STPCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCard.m; path = Stripe/STPCard.m; sourceTree = "<group>"; };
 		D5E7865DA93CD3E14648804BF3D5DB10 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
 		D6B890FED79CCB18F008A6AEB5DAAAA2 /* AWSMTLManagedObjectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLManagedObjectAdapter.m; path = AWSCore/Mantle/AWSMTLManagedObjectAdapter.m; sourceTree = "<group>"; };
 		D70BC029EA5DEDC352DB494C60A134CB /* AWSValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSValidation.h; path = AWSCore/Serialization/AWSValidation.h; sourceTree = "<group>"; };
+		D8C5C89D173EB21B4BFFF2631C5C2904 /* FABKitProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABKitProtocol.h; path = Stripe/Fabric/FABKitProtocol.h; sourceTree = "<group>"; };
+		D8DD91F9E28B628D295F35E2043D712B /* STPCheckoutOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutOptions.m; path = Stripe/Checkout/STPCheckoutOptions.m; sourceTree = "<group>"; };
+		D948093372F563A8F43A902A170B40C8 /* STPFormTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPFormTextField.m; path = Stripe/UI/STPFormTextField.m; sourceTree = "<group>"; };
 		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
 		DA7BD60218516217F3E39D9EC8F507D5 /* AWSSTSResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTSResources.h; path = AWSCore/STS/AWSSTSResources.h; sourceTree = "<group>"; };
 		DAC409584084225E081A83158F8FE046 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DB2B9C218E8DD99DCEEC4EEDFFD1F142 /* AWSCognito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCognito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC96A326B2D50F375C38E7A085A89B89 /* STPCheckoutOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutOptions.m; path = Stripe/Checkout/STPCheckoutOptions.m; sourceTree = "<group>"; };
 		DDA198F34FA012BB0FDA5D86D6BBFCC8 /* NSValueTransformer+AWSMTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+AWSMTLInversionAdditions.m"; path = "AWSCore/Mantle/NSValueTransformer+AWSMTLInversionAdditions.m"; sourceTree = "<group>"; };
+		DDED51932936F9F2F78736283591B0C6 /* STPPaymentCardTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPPaymentCardTextField.h; path = Stripe/PublicHeaders/UI/STPPaymentCardTextField.h; sourceTree = "<group>"; };
 		DFAE22A66C0E23C68CAC84135F367301 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		E056549B34D6896DE4C8F5426CD2B78C /* AWSBolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSBolts.h; path = AWSCore/Bolts/AWSBolts.h; sourceTree = "<group>"; };
 		E0A43B2BF2826C0D4A1399F27CC1A5DE /* AWSFMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMDatabaseQueue.m; path = AWSCore/FMDB/AWSFMDatabaseQueue.m; sourceTree = "<group>"; };
 		E130C25145631BDE3100C6BDCD00E55A /* AWSCredentialsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCredentialsProvider.h; path = AWSCore/Authentication/AWSCredentialsProvider.h; sourceTree = "<group>"; };
 		E476C9B5109E803B79B86B4F57569F07 /* AWSCognitoService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoService.m; path = Cognito/AWSCognitoService.m; sourceTree = "<group>"; };
-		E487E06BF56BA265133EF948AE379800 /* stp_card_diners@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_diners@2x.png"; path = "Stripe/Resources/Images/stp_card_diners@2x.png"; sourceTree = "<group>"; };
 		E53D51A9DA5FEBBAAAD629FF72B2F5D0 /* AWSXMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSXMLWriter.h; path = AWSCore/XMLWriter/AWSXMLWriter.h; sourceTree = "<group>"; };
 		E5CE21A583D926D174D38B21BF5CA7A7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		E77294A0FCECCB0D7752C9E5864BA2DD /* STPCheckoutOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutOptions.h; path = Stripe/PublicHeaders/Checkout/STPCheckoutOptions.h; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		E7F9246E684DB6B6D398975091716207 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E88A09CF4DC172EAD1FF748CBFBD4E2F /* stp_card_placeholder_template@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_placeholder_template@3x.png"; path = "Stripe/Resources/Images/stp_card_placeholder_template@3x.png"; sourceTree = "<group>"; };
 		E8EEA05716A3F6AFC92B5EB9475767C0 /* AWSCognitoConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoConstants.m; path = Cognito/Internal/AWSCognitoConstants.m; sourceTree = "<group>"; };
 		EA69960BC0AEF63529FAD6DF3CA7EBA5 /* AWSCognitoUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoUtil.h; path = Cognito/Internal/AWSCognitoUtil.h; sourceTree = "<group>"; };
+		EBB17F82CB4CD560C9011DF56FE34B52 /* stp_card_jcb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_jcb@3x.png"; path = "Stripe/Resources/Images/stp_card_jcb@3x.png"; sourceTree = "<group>"; };
+		EC1E487A9BADD6F63B0434BCE67368A2 /* Stripe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stripe-dummy.m"; sourceTree = "<group>"; };
 		EC7D4E010B35A19A67DEBF0BEC2763F2 /* AWSCognitoSyncResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoSyncResources.h; path = CognitoSync/AWSCognitoSyncResources.h; sourceTree = "<group>"; };
 		EC892D31F1A3DDD1060461865792F75C /* AWSXMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSXMLWriter.m; path = AWSCore/XMLWriter/AWSXMLWriter.m; sourceTree = "<group>"; };
 		EC99FA2035181A55AB2432E6B7C9FD72 /* NSDictionary+AWSMTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+AWSMTLManipulationAdditions.m"; path = "AWSCore/Mantle/NSDictionary+AWSMTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		ED5302AB820B1272EE8F1388EB64C32E /* AWSCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCore-umbrella.h"; sourceTree = "<group>"; };
 		F050AF5B422A200EC21AAD2906A2B374 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		F1D6F95780BF4280473E61C308285C3C /* PKPayment+Stripe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PKPayment+Stripe.h"; path = "Stripe/ApplePay/PKPayment+Stripe.h"; sourceTree = "<group>"; };
+		F0770BF04C05CAFDA0AF99D692390BE0 /* stp_card_diners@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_diners@3x.png"; path = "Stripe/Resources/Images/stp_card_diners@3x.png"; sourceTree = "<group>"; };
+		F11C91833808BF123C36D2C962FE5A62 /* STPCheckoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutDelegate.h; path = Stripe/Checkout/STPCheckoutDelegate.h; sourceTree = "<group>"; };
+		F1ED8ABABD0B617AF5227F5E69F7A54A /* STPAPIClient+ApplePay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPAPIClient+ApplePay.h"; path = "Stripe/PublicHeaders/ApplePay/STPAPIClient+ApplePay.h"; sourceTree = "<group>"; };
 		F26CDE068E1BF48B4167D3E107948BA0 /* AWSCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCore-prefix.pch"; sourceTree = "<group>"; };
+		F26E1CA447D7030A87A86CA882126A8E /* Stripe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stripe-umbrella.h"; sourceTree = "<group>"; };
 		F28DC6F1191534657E90ABECE1A14B68 /* AWSUICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSUICKeyChainStore.m; path = AWSCore/UICKeyChainStore/AWSUICKeyChainStore.m; sourceTree = "<group>"; };
+		F346561DB97C5476C5D34FFFAFD27DC1 /* stp_card_cvc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc@3x.png"; path = "Stripe/Resources/Images/stp_card_cvc@3x.png"; sourceTree = "<group>"; };
 		F34B974549B4A5F2EE88A4DDB3FCF873 /* AWSURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSURLRequestSerialization.h; path = AWSCore/Serialization/AWSURLRequestSerialization.h; sourceTree = "<group>"; };
-		F3EF78300FD7EF71D27290C5BBE314E4 /* stp_card_cvc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc@2x.png"; path = "Stripe/Resources/Images/stp_card_cvc@2x.png"; sourceTree = "<group>"; };
+		F369E01E89603E19844AAC49544F443D /* stp_card_visa.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_visa.png; path = Stripe/Resources/Images/stp_card_visa.png; sourceTree = "<group>"; };
+		F3FC743C853EB8292206D839712D4063 /* STPFormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPFormTextField.h; path = Stripe/UI/STPFormTextField.h; sourceTree = "<group>"; };
 		F44B9FA4C34A48BDFE146F6C367AAD96 /* AWSLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLogging.m; path = AWSCore/Utility/AWSLogging.m; sourceTree = "<group>"; };
-		F553B3D39BA4551843C76A69ADED97A0 /* stp_card_visa.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_visa.png; path = Stripe/Resources/Images/stp_card_visa.png; sourceTree = "<group>"; };
 		F5B83D8A709505CE5F71CB9C0AEE7041 /* AWSMTLJSONAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLJSONAdapter.m; path = AWSCore/Mantle/AWSMTLJSONAdapter.m; sourceTree = "<group>"; };
 		F6408BB1BC4EA740D1A66D6E3140212F /* AWSCognitoRecord_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoRecord_Internal.h; path = Cognito/Internal/AWSCognitoRecord_Internal.h; sourceTree = "<group>"; };
 		F67031DB68278DF6A9316DBF9E6E45CE /* AWSCognito.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCognito.xcconfig; sourceTree = "<group>"; };
 		F69F244DE4FD748C011696ED063BDCA8 /* AWSURLRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSURLRequestRetryHandler.m; path = AWSCore/Serialization/AWSURLRequestRetryHandler.m; sourceTree = "<group>"; };
+		F69F669B356BE717C590F9C5852EF0B3 /* STPCardParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCardParams.m; path = Stripe/STPCardParams.m; sourceTree = "<group>"; };
 		F7B9B1632405164E8377C6E91FDF9F6E /* AWSSTS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTS.h; path = AWSCore/STS/AWSSTS.h; sourceTree = "<group>"; };
 		F7DAFAF16E10E11B47EA76EFCD4367F6 /* AWSTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTaskCompletionSource.m; path = AWSCore/Bolts/AWSTaskCompletionSource.m; sourceTree = "<group>"; };
-		F7FB229FFD92A721C2C92A2961C9500D /* stp_card_amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_amex@2x.png"; path = "Stripe/Resources/Images/stp_card_amex@2x.png"; sourceTree = "<group>"; };
 		F818F8F508C51ACFB10F07F1485C47D6 /* AWSFMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDatabaseQueue.h; path = AWSCore/FMDB/AWSFMDatabaseQueue.h; sourceTree = "<group>"; };
 		FAC32CB2CC4DB1B5649463AEDB87CC29 /* NSArray+AWSMTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+AWSMTLManipulationAdditions.h"; path = "AWSCore/Mantle/NSArray+AWSMTLManipulationAdditions.h"; sourceTree = "<group>"; };
-		FB1ECA928AA7565481B65BF5FD25E574 /* STPCheckoutOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutOptions.h; path = Stripe/PublicHeaders/Checkout/STPCheckoutOptions.h; sourceTree = "<group>"; };
+		FBCB7F4924DEC8B3E6046D42C4E57B81 /* NSDictionary+Stripe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Stripe.h"; path = "Stripe/NSDictionary+Stripe.h"; sourceTree = "<group>"; };
 		FC1CD25D447C3912A3D3556C5D481CA7 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
+		FCED4F134D9431545CADDD9DDF9C07F0 /* stp_card_placeholder.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_placeholder.png; path = Stripe/Resources/Images/stp_card_placeholder.png; sourceTree = "<group>"; };
 		FE006DDF1FF28F2FF3BC8F304782BE0F /* AWSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSNetworking.h; path = AWSCore/Networking/AWSNetworking.h; sourceTree = "<group>"; };
 		FE2102E665C12B133CDBA6A34F6F5953 /* AWSTMDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTMDiskCache.m; path = AWSCore/TMCache/AWSTMDiskCache.m; sourceTree = "<group>"; };
-		FEC3398B60969B713D29006F982AEB1E /* STPCheckoutInternalUIWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutInternalUIWebViewController.m; path = Stripe/Checkout/STPCheckoutInternalUIWebViewController.m; sourceTree = "<group>"; };
 		FF026B512FA7F04D4EE30B3D703BDF3C /* AWSCognitoIdentityModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityModel.m; path = AWSCore/CognitoIdentity/AWSCognitoIdentityModel.m; sourceTree = "<group>"; };
+		FFBF26DD5CBB61B55418F72E08C06EE3 /* STPCardValidationState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardValidationState.h; path = Stripe/PublicHeaders/STPCardValidationState.h; sourceTree = "<group>"; };
+		FFFC0541AA0234571CEB319C4963B1CB /* STPBankAccountParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPBankAccountParams.m; path = Stripe/STPBankAccountParams.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -679,6 +707,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02B72A36751F449F7C53656AA5152570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E82CFE52494FA29DF8714565DD7BB9B /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		02F77183B13FAF7A8F2B791FB411CC37 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -693,6 +729,14 @@
 				33F395FAD6C0357420CDB3204007EF78 /* TwitterKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06C7D125573272B371AE328F62C5C0BF /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				BBECD04A00ADEF5940EFD5D8ACC8CAFC /* Frameworks */,
+			);
+			path = Fabric;
 			sourceTree = "<group>";
 		};
 		08FF4212986B7EC8D3A23048029A6885 /* iOS */ = {
@@ -723,72 +767,9 @@
 		2771668413E5DC38CE3A5152BBF0B1A6 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				433B09BCCCBD8E674A1D7749368DF3C4 /* Frameworks */,
+				02B72A36751F449F7C53656AA5152570 /* Frameworks */,
 			);
 			path = Crashlytics;
-			sourceTree = "<group>";
-		};
-		2BE686D7CAD9D7863D0614A503BBF1D7 /* Fabric */ = {
-			isa = PBXGroup;
-			children = (
-				DBC2BA84A93C7481023F6E3551DE3732 /* Base */,
-			);
-			path = Fabric;
-			sourceTree = "<group>";
-		};
-		2E1BC83F9F34B48D8B85A347EA4EC604 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				F1D6F95780BF4280473E61C308285C3C /* PKPayment+Stripe.h */,
-				CF4C4C1BC7BA1A4A8BA92A27B32A0CE8 /* PKPayment+Stripe.m */,
-				2FF84CFDD0EB991A1429B8ED33750E53 /* STPAPIClient.h */,
-				29C6396022964FF824A6A080F019284E /* STPAPIClient.m */,
-				25DC749FDA0BEFB66EB0ABE3AE63F9B0 /* STPAPIClient+ApplePay.h */,
-				BEAEE6726FFB14E00A93E4FD1FC2061B /* STPAPIClient+ApplePay.m */,
-				A1D31C062ADFDE179E83D6575445B118 /* STPAPIConnection.h */,
-				38B609E4F7F8566BBD58E6C6C0D79FFA /* STPAPIConnection.m */,
-				033A7F9B6212DDEFEC7BD96061D2DB0C /* STPBankAccount.h */,
-				D03501E886CBBA08D1B9DECB9735DD7E /* STPBankAccount.m */,
-				89943644F56B4C13F81F6C75C0F64801 /* STPCard.h */,
-				4E16C4520ED2D2FA8C9E0182DEAECB8E /* STPCard.m */,
-				A574225358B4F8C22B9FE980CAC69790 /* STPCardBrand.h */,
-				CAE2E48802E8597447649CDAE13B45BA /* STPCardValidationState.h */,
-				670BA5102C51E7914404AABB892098AB /* STPCardValidator.h */,
-				4B3318ADDABDE6E738D81E7290D7B6F1 /* STPCardValidator.m */,
-				CD9E8C3FC07EBE9EEA42CECC3DAB6C63 /* STPCheckoutDelegate.h */,
-				BA812DB8306A3FF9826B263695D1EF42 /* STPCheckoutInternalUIWebViewController.h */,
-				FEC3398B60969B713D29006F982AEB1E /* STPCheckoutInternalUIWebViewController.m */,
-				FB1ECA928AA7565481B65BF5FD25E574 /* STPCheckoutOptions.h */,
-				DC96A326B2D50F375C38E7A085A89B89 /* STPCheckoutOptions.m */,
-				8E284F27DA0C4B9B2EF494764AFCD3EE /* STPCheckoutViewController.h */,
-				151DF81B6FB84F0638E158EC304D78CF /* STPCheckoutViewController.m */,
-				847464D818031C23AE6B32B87E115FF6 /* STPCheckoutWebViewAdapter.h */,
-				5696D46E6EE0094A5D7986649CBEEB26 /* STPColorUtils.h */,
-				9965B14B5B40A3375F458520DEEEC986 /* STPColorUtils.m */,
-				33725027F31C8299D87B9C7CB68D6034 /* STPFormEncoder.h */,
-				B06D650C233C6AAB670E9F023F694CF4 /* STPFormEncoder.m */,
-				422A4538D05A144025BB1517582D6F96 /* STPFormTextField.h */,
-				4A1B2F29CF5962C6D316657AE344A082 /* STPFormTextField.m */,
-				703C50D89DCF8ACE9D3A62DABAE9C0CF /* STPIOSCheckoutWebViewAdapter.h */,
-				8C532CBAA333748A961F57008DF6C697 /* STPIOSCheckoutWebViewAdapter.m */,
-				29781084F397FDDD2AA5D955AF664E69 /* STPOSXCheckoutWebViewAdapter.h */,
-				5D67A10ABB58DCB724067EB442D32CF9 /* STPOSXCheckoutWebViewAdapter.m */,
-				D0DA321AE131FC83E67739996AD5E13D /* STPPaymentCardTextField.h */,
-				0C299B42DF6DBE061797DD41ACA882F8 /* STPPaymentCardTextField.m */,
-				84E603479FFABD644D8B4D454F423DB8 /* STPPaymentCardTextFieldViewModel.h */,
-				ABEE74680B716BF9EDE792EF5520F59D /* STPPaymentCardTextFieldViewModel.m */,
-				B4E9EB6EFB4F8680897EA8C762F3D7B5 /* STPStrictURLProtocol.h */,
-				5E9EFD05D5BA677A862E9E6668E04DC7 /* STPStrictURLProtocol.m */,
-				9B50C9DBEEDECF64F9C21BE8F64CCB2E /* STPToken.h */,
-				89F8DFFAF62F49ECF28092C80DD5BC7F /* STPToken.m */,
-				8F690B7BEA5B68ACC22AED07BF392790 /* Stripe.h */,
-				403AA2E594D9C37016F597C0E1B67193 /* Stripe+ApplePay.h */,
-				4698EEE765574F61B0037825123C688C /* Stripe+ApplePay.m */,
-				27DD18141D55554346555A7F7FDD7374 /* StripeError.h */,
-				3B86CF70C688863176D079A87B5D637F /* StripeError.m */,
-				75B90A804B2EBE701ED711B854A8AFD9 /* Resources */,
-			);
-			name = Core;
 			sourceTree = "<group>";
 		};
 		33D35BE39FA9F20AB85E524B19636B65 /* Digits */ = {
@@ -827,28 +808,6 @@
 			path = "../Target Support Files/AWSCognito";
 			sourceTree = "<group>";
 		};
-		433B09BCCCBD8E674A1D7749368DF3C4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4B375DF860A28BF2307217F703286269 /* Crashlytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4A80FF73A4469400D1E7DD9AFBB89B7E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D790818A415EC6364054E2E9C415076 /* Info.plist */,
-				CEBE05C11100E58FD5DE0648389A0227 /* Stripe.modulemap */,
-				0DFF8FB2151042C849556A92F1C679F9 /* Stripe.xcconfig */,
-				66D455E0D683EAEB259930769D354085 /* Stripe-dummy.m */,
-				119104474750E035E07559094981321C /* Stripe-prefix.pch */,
-				BDCB24B05A672AFB1ACB0393169C5C92 /* Stripe-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Stripe";
-			sourceTree = "<group>";
-		};
 		6658553DB2C176EC7453D81E60249933 /* TwitterKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,44 +823,6 @@
 				E336075FF7BCF19749B4143C81C1D7D0 /* Frameworks */,
 			);
 			path = TwitterCore;
-			sourceTree = "<group>";
-		};
-		75B90A804B2EBE701ED711B854A8AFD9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8AA35859AFD5CF6DE7F2F7C223F618C5 /* Images */,
-				B8C74655BF7F9D9DF4B20D2CB5DBD699 /* stp_card_amex.png */,
-				F7FB229FFD92A721C2C92A2961C9500D /* stp_card_amex@2x.png */,
-				4C544B99788791D7D69547FE528482D1 /* stp_card_amex@3x.png */,
-				87E17193FD79E243761328AD990B1D68 /* stp_card_cvc.png */,
-				F3EF78300FD7EF71D27290C5BBE314E4 /* stp_card_cvc@2x.png */,
-				A007595456EDF2398C0DF66C14F7398A /* stp_card_cvc@3x.png */,
-				A0935E904996D6B8B97D90443390648B /* stp_card_cvc_amex.png */,
-				12483E50A96F965CE7F64E6B99AA4CCE /* stp_card_cvc_amex@2x.png */,
-				941DA5C31372F7C26CAA9F61DF8F25C7 /* stp_card_cvc_amex@3x.png */,
-				5C6C64C539089F0A9537043E84BAE7B6 /* stp_card_diners.png */,
-				E487E06BF56BA265133EF948AE379800 /* stp_card_diners@2x.png */,
-				028E4381B6399687DA40F62CFB6FEDE4 /* stp_card_diners@3x.png */,
-				6C6EA8677DC5357126DBE2B40EED691C /* stp_card_discover.png */,
-				A173A69058E22E79ED891EB0F4E33D5D /* stp_card_discover@2x.png */,
-				B32A07C3E1687DFC59BA6CF5B989E48D /* stp_card_discover@3x.png */,
-				D50C2539848801AF36A3FC1C8F627D5C /* stp_card_jcb.png */,
-				8361B73896B6B54636F0185F7F5E6C29 /* stp_card_jcb@2x.png */,
-				8604397893444D6A4547A0F423867045 /* stp_card_jcb@3x.png */,
-				3A886857E9122FD202F219D2CCB72F38 /* stp_card_mastercard.png */,
-				7FEBD7192BB0190F17247DD8AD9FAFD2 /* stp_card_mastercard@2x.png */,
-				4DA148536A97774F82AE9189F718B969 /* stp_card_mastercard@3x.png */,
-				681B3C71BCC3DF1D7D87CA3346EAFD4A /* stp_card_placeholder.png */,
-				0BEF244EC6B2DBA83DF7184802830232 /* stp_card_placeholder@2x.png */,
-				9C035CE15BE62B5AF0D3C347221AE8BD /* stp_card_placeholder@3x.png */,
-				4171AD75862620AEED14B491B177A945 /* stp_card_placeholder_template.png */,
-				D23D3AA3F53834851494F9C0209E1DBF /* stp_card_placeholder_template@2x.png */,
-				E88A09CF4DC172EAD1FF748CBFBD4E2F /* stp_card_placeholder_template@3x.png */,
-				F553B3D39BA4551843C76A69ADED97A0 /* stp_card_visa.png */,
-				2E2967360F742053F897717B605F4EF3 /* stp_card_visa@2x.png */,
-				2837F79AD96B91A6F5831CBF06832713 /* stp_card_visa@3x.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -1154,6 +1075,75 @@
 			path = AWSCognito;
 			sourceTree = "<group>";
 		};
+		A5DF9AE4B1B092C8F4B1DF5AC0B5C113 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5C89D173EB21B4BFFF2631C5C2904 /* FABKitProtocol.h */,
+				73843BD96DB3D3DBFFF40B9FFC78996F /* Fabric.h */,
+				CDF68D8B4D8F20E2937C4BCF1CBDB795 /* Fabric+FABKits.h */,
+				FBCB7F4924DEC8B3E6046D42C4E57B81 /* NSDictionary+Stripe.h */,
+				ABA6E063172EAE610656F218BA6A5701 /* NSDictionary+Stripe.m */,
+				5FD84D230E43441669E89D60F11787C2 /* PKPayment+Stripe.h */,
+				A9E8306FBCF0E45D3BF2DF8B1AB1EDDE /* PKPayment+Stripe.m */,
+				5DB2FD64F385F13ACA8BE018632CF646 /* STPAPIClient.h */,
+				4F5880976BCA60D9FC9FD896060A18D6 /* STPAPIClient.m */,
+				F1ED8ABABD0B617AF5227F5E69F7A54A /* STPAPIClient+ApplePay.h */,
+				4FB6E05692B1408DF1FBD0B0085D6496 /* STPAPIClient+ApplePay.m */,
+				9A05CF686474D2BA25115AD67DDE1A32 /* STPAPIClient+Private.h */,
+				52822D6D02802C979AF4FE50C2359383 /* STPAPIPostRequest.h */,
+				D460E500F402478DB9EA3565A84CB24D /* STPAPIPostRequest.m */,
+				C39CDABAC2C86E5D096968EFDE344C02 /* STPAPIResponseDecodable.h */,
+				57554439628D658531094521DE0A86DB /* STPBankAccount.h */,
+				1E3AFECF5A4D955EF155B35DA6715D2D /* STPBankAccount.m */,
+				B550613F5E814AA9DFCD894D969404C1 /* STPBankAccountParams.h */,
+				FFFC0541AA0234571CEB319C4963B1CB /* STPBankAccountParams.m */,
+				D2AF22800AAF21330A6B33130852FD9C /* STPCard.h */,
+				D48E95DC7A2997FC246B6C7C61DD3412 /* STPCard.m */,
+				1421A5ACF9B12B6DE83F4A52333E9D6B /* STPCardBrand.h */,
+				186E51926C8E9858BEEFF1BFE8D6E55E /* STPCardParams.h */,
+				F69F669B356BE717C590F9C5852EF0B3 /* STPCardParams.m */,
+				FFBF26DD5CBB61B55418F72E08C06EE3 /* STPCardValidationState.h */,
+				920E65E6C48E0378FC1C7D6A3E065436 /* STPCardValidator.h */,
+				8D7A71D48AFDE28520497132452B7690 /* STPCardValidator.m */,
+				B17413BB31A24032D0B77BAD387506FE /* STPCategoryLoader.h */,
+				4CA40D1625763759BF4AD7E9462D48CB /* STPCategoryLoader.m */,
+				F11C91833808BF123C36D2C962FE5A62 /* STPCheckoutDelegate.h */,
+				479D1CC75875E1DD2337C6AFC3B4E4CF /* STPCheckoutInternalUIWebViewController.h */,
+				22BA46659793199B91827BC9993A53AA /* STPCheckoutInternalUIWebViewController.m */,
+				E77294A0FCECCB0D7752C9E5864BA2DD /* STPCheckoutOptions.h */,
+				D8DD91F9E28B628D295F35E2043D712B /* STPCheckoutOptions.m */,
+				7457698BE412915F6C4CA0084474A0EA /* STPCheckoutViewController.h */,
+				0BEB16F6EE0682F2A5CC84AB885D33EB /* STPCheckoutViewController.m */,
+				A495F23B8CC2A1034BFED3DFCB79FF97 /* STPCheckoutWebViewAdapter.h */,
+				AD705AA524ED6AC0E1B34A7CDFAEDF1C /* STPColorUtils.h */,
+				D21277E86AE9407333EB8C7009A410A7 /* STPColorUtils.m */,
+				8B5843577D8038467BCCFC272A53BC64 /* STPFormEncodable.h */,
+				9DA5B3FA85A06B77B240F79F6154C14C /* STPFormEncoder.h */,
+				B8912931C66D93D42279CEC9B657B052 /* STPFormEncoder.m */,
+				F3FC743C853EB8292206D839712D4063 /* STPFormTextField.h */,
+				D948093372F563A8F43A902A170B40C8 /* STPFormTextField.m */,
+				58D8EC0B9F742CFB1C491518CB87B3BF /* STPIOSCheckoutWebViewAdapter.h */,
+				B7EECC1EE10716929E10C8AEBB6E0604 /* STPIOSCheckoutWebViewAdapter.m */,
+				A3007F02EA4978CC12EFF596EC9914EF /* STPOSXCheckoutWebViewAdapter.h */,
+				9D3A08DC5B966928167C2D3DBDADE26C /* STPOSXCheckoutWebViewAdapter.m */,
+				DDED51932936F9F2F78736283591B0C6 /* STPPaymentCardTextField.h */,
+				12243222CC5F27ED15FC4BAE3520454F /* STPPaymentCardTextField.m */,
+				8BE7417C228E8C3198CB0C69F6EADF6C /* STPPaymentCardTextFieldViewModel.h */,
+				8DDAB847DB1A832A54F3BFF376B1A193 /* STPPaymentCardTextFieldViewModel.m */,
+				AF20D0A99A213B0159D6927E5162F9C2 /* STPStrictURLProtocol.h */,
+				7EDB9A806A36B1682A7BFECD39508C61 /* STPStrictURLProtocol.m */,
+				A62E87EAB4B3224533C08A01EBC0F0D2 /* STPToken.h */,
+				432A67A6813B352B23FF52611249A266 /* STPToken.m */,
+				2ACA77840B2F5B071A265E51C72B22C7 /* Stripe.h */,
+				23C072ED8D12907F81E742626BAA4C19 /* Stripe+ApplePay.h */,
+				5AD1BC07FC057A950083ADD2AA1BE8AD /* Stripe+ApplePay.m */,
+				A6FE54F2C1616DFDB2DFBB9920316376 /* StripeError.h */,
+				82C18C8195F12B32B60821DEA979AAA1 /* StripeError.m */,
+				D40474FF1DC9A1F3F26452C0FA9AB9C1 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		AC02EF19E97EE27662573BCC6451FD94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1173,9 +1163,9 @@
 				9EA3FBC0CB9A63B1F62BE98AC7E80F22 /* AWSCore */,
 				2771668413E5DC38CE3A5152BBF0B1A6 /* Crashlytics */,
 				33D35BE39FA9F20AB85E524B19636B65 /* Digits */,
-				2BE686D7CAD9D7863D0614A503BBF1D7 /* Fabric */,
+				06C7D125573272B371AE328F62C5C0BF /* Fabric */,
 				D1EEA0E83CD172AEE0D756D40EF85485 /* Optimizely-iOS-SDK */,
-				EB55C6168392A91FAD785A5B09C10D2B /* Stripe */,
+				CB8D65240445749703557D0119DFCB97 /* Stripe */,
 				759D9D1AA8AFD4F75C35F0A09E69D38B /* TwitterCore */,
 				6658553DB2C176EC7453D81E60249933 /* TwitterKit */,
 			);
@@ -1188,6 +1178,23 @@
 				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BBECD04A00ADEF5940EFD5D8ACC8CAFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C22FEC0EC442335CC4AC7CB6824F86 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8D65240445749703557D0119DFCB97 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				A5DF9AE4B1B092C8F4B1DF5AC0B5C113 /* Core */,
+				FFED2ADD17521D283ACCB2BF80EB9A61 /* Support Files */,
+			);
+			path = Stripe;
 			sourceTree = "<group>";
 		};
 		CFD4420CC93AB23D3C1C35C3D487FC71 /* Frameworks */ = {
@@ -1206,12 +1213,42 @@
 			path = "Optimizely-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		D7AD102A48235441B3F4BFA8992EB253 /* Frameworks */ = {
+		D40474FF1DC9A1F3F26452C0FA9AB9C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C31EACD14D7E191C591125F81EA565AA /* Fabric.framework */,
+				8DA718A9E9B79B1B741E9CAFBAA61349 /* Images */,
+				92385551FB6FD219F698E03B7E60431E /* stp_card_amex.png */,
+				C7E61C8C3B485674C9F58F3CBAF639FE /* stp_card_amex@2x.png */,
+				477D26B3DC41673ABA2A383556666413 /* stp_card_amex@3x.png */,
+				185D00DC8B3D22CAECB76FE49A2A2360 /* stp_card_cvc.png */,
+				5A334D9A98E0FB48EBE2FCECFC4DA2F6 /* stp_card_cvc@2x.png */,
+				F346561DB97C5476C5D34FFFAFD27DC1 /* stp_card_cvc@3x.png */,
+				1BF27D083EDDA468EC9F0C4981B1FD61 /* stp_card_cvc_amex.png */,
+				5D98F6F61D090660A4A9DA27422E2CD4 /* stp_card_cvc_amex@2x.png */,
+				97EF9C98F568FCE0E832F14F153811F5 /* stp_card_cvc_amex@3x.png */,
+				ADB1A2300F823F6C9FF4FC512F023915 /* stp_card_diners.png */,
+				2D4AAD1BB69DBB1AFACC2C4264F090C9 /* stp_card_diners@2x.png */,
+				F0770BF04C05CAFDA0AF99D692390BE0 /* stp_card_diners@3x.png */,
+				2B877B632015BF972B2BA7A37015F605 /* stp_card_discover.png */,
+				07777C50326ECC215B911E9DB3277B71 /* stp_card_discover@2x.png */,
+				8B586B96EDBCD3E97D93211CD346FFCF /* stp_card_discover@3x.png */,
+				60929934B407438F74BC9466ABCEC934 /* stp_card_jcb.png */,
+				A619A8B1EF2C9AB5F196929EBD136189 /* stp_card_jcb@2x.png */,
+				EBB17F82CB4CD560C9011DF56FE34B52 /* stp_card_jcb@3x.png */,
+				755ED15724A3E9F13F4389CF9539CE98 /* stp_card_mastercard.png */,
+				40477499378C3BAEF99234EAC17149BC /* stp_card_mastercard@2x.png */,
+				D43C367E04CE46950C1BB2716354F81C /* stp_card_mastercard@3x.png */,
+				FCED4F134D9431545CADDD9DDF9C07F0 /* stp_card_placeholder.png */,
+				AE2AEF68107EC5D1EFF7BD607FC20963 /* stp_card_placeholder@2x.png */,
+				4DFA03977F7E049612423C7B5532AE72 /* stp_card_placeholder@3x.png */,
+				2690C2B13DE91D1ABAFF0E1D9BA72140 /* stp_card_placeholder_template.png */,
+				790363D76A6827281CDE32C0313AF169 /* stp_card_placeholder_template@2x.png */,
+				692DE840780D0DDC91EE51856BB42D29 /* stp_card_placeholder_template@3x.png */,
+				F369E01E89603E19844AAC49544F443D /* stp_card_visa.png */,
+				51AC9C28D7E7EEA8DE32E0784EA30899 /* stp_card_visa@2x.png */,
+				D144FB0A50206D2509E59934255D5CE0 /* stp_card_visa@3x.png */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		DAB734E323AC70FA7398819C3DC9ADF2 /* Support Files */ = {
@@ -1228,14 +1265,6 @@
 			path = "../Target Support Files/AWSCore";
 			sourceTree = "<group>";
 		};
-		DBC2BA84A93C7481023F6E3551DE3732 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				D7AD102A48235441B3F4BFA8992EB253 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
 		E336075FF7BCF19749B4143C81C1D7D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1244,52 +1273,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB55C6168392A91FAD785A5B09C10D2B /* Stripe */ = {
+		FFED2ADD17521D283ACCB2BF80EB9A61 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E1BC83F9F34B48D8B85A347EA4EC604 /* Core */,
-				4A80FF73A4469400D1E7DD9AFBB89B7E /* Support Files */,
+				3B780BBCFF9BE9578A0DBB81BE5591D7 /* Info.plist */,
+				3F625E695EC1955F9B0009F2572E84DD /* Stripe.modulemap */,
+				810805068CBC1534F2D46618C8ADC9C9 /* Stripe.xcconfig */,
+				EC1E487A9BADD6F63B0434BCE67368A2 /* Stripe-dummy.m */,
+				C44C10A46EAD54E2DEF62B67E94C1AEC /* Stripe-prefix.pch */,
+				F26E1CA447D7030A87A86CA882126A8E /* Stripe-umbrella.h */,
 			);
-			path = Stripe;
+			name = "Support Files";
+			path = "../Target Support Files/Stripe";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		026F7276F02CC3936D2008920E5A9989 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B651CD236BCA037E596C545A762263B4 /* PKPayment+Stripe.h in Headers */,
-				255BA411C127922E6B9FC139BDEE0B9E /* STPAPIClient+ApplePay.h in Headers */,
-				A8952CD937999391818490E285729AF2 /* STPAPIClient.h in Headers */,
-				DB2E74D1A5C20C39E04F17A489CA51CD /* STPAPIConnection.h in Headers */,
-				CE1A8E0A96FF1DDB14E0F5472CB2F5C4 /* STPBankAccount.h in Headers */,
-				0066BECC5CDF7646167B3B4E5CBB0614 /* STPCard.h in Headers */,
-				B4516FD372A167322DF92A970371AB78 /* STPCardBrand.h in Headers */,
-				6D472823FC451A711BAF78522B0DE882 /* STPCardValidationState.h in Headers */,
-				618A989C9E2DBD213126ADFE7112B26C /* STPCardValidator.h in Headers */,
-				8DD8DB3F9909385F188675962C391D5F /* STPCheckoutDelegate.h in Headers */,
-				00C1ADF88DA468AFAA8DDBD20DB16358 /* STPCheckoutInternalUIWebViewController.h in Headers */,
-				218691829FDA8B84F1E7F071C85802AA /* STPCheckoutOptions.h in Headers */,
-				040A09A6E05BCE0EF0DB75F7CE9D00D1 /* STPCheckoutViewController.h in Headers */,
-				E1AFA37CDC8AB3420783CDC603E586AB /* STPCheckoutWebViewAdapter.h in Headers */,
-				031A9F4916F390540E47E6B1C49B8FF3 /* STPColorUtils.h in Headers */,
-				98C674AD0B989DFAC1E5F517455E4D78 /* STPFormEncoder.h in Headers */,
-				4093AB7D80A52E54FDEF8579AFC937E7 /* STPFormTextField.h in Headers */,
-				7115C6274665BC5CF5DE920F784310DE /* STPIOSCheckoutWebViewAdapter.h in Headers */,
-				84DA2D12A4BA256DA82AA9CB18A6F3C3 /* STPOSXCheckoutWebViewAdapter.h in Headers */,
-				2718BBDA9846C46B77112F9C03F53B91 /* STPPaymentCardTextField.h in Headers */,
-				67244FDD1E3933E610D6E783C1814645 /* STPPaymentCardTextFieldViewModel.h in Headers */,
-				E23CFEE6BD26F7A02562B4C71A01E77A /* STPStrictURLProtocol.h in Headers */,
-				DE319A9BA5E327E8683802245B5DC617 /* STPToken.h in Headers */,
-				B4AE9C233471501C0E997FBA186DEACE /* Stripe+ApplePay.h in Headers */,
-				41FAACF9959539933D637CA58D82F0F3 /* Stripe-umbrella.h in Headers */,
-				8D8D2FC47584D297DBECE0998568851E /* Stripe.h in Headers */,
-				88DBF401D0F6A3932A5B332848F00232 /* StripeError.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0D6AF76323F1EA33072E79F564EB4525 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1318,6 +1318,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2794BFC3024C229B3EC669209819087 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCBCFA40BE77E0AA7DC04C4DB66F602 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CBE32CFA28799E24DAB9FBA1BBD0DD /* FABKitProtocol.h in Headers */,
+				862509308C1C39BB53C608EF464C43B9 /* Fabric+FABKits.h in Headers */,
+				3D9C23F3EA4B2400DEAFBA1EA4C7D6E3 /* Fabric.h in Headers */,
+				F67B98CFB767062AD38C836855B382DF /* NSDictionary+Stripe.h in Headers */,
+				FD6330CFDD53887E8A5899D7E0A7D82A /* PKPayment+Stripe.h in Headers */,
+				59904ED7B735C1F9DCF95D8370FAC5CC /* STPAPIClient+ApplePay.h in Headers */,
+				358A1C020091252FACACA17E0AB34376 /* STPAPIClient+Private.h in Headers */,
+				F3FFF40C0F1318EA5B1690261C9E1146 /* STPAPIClient.h in Headers */,
+				8EEF38B7D71E9A8D97DAFAD4C5C78478 /* STPAPIPostRequest.h in Headers */,
+				FC9A57397F797B46DE53B92CD1F74061 /* STPAPIResponseDecodable.h in Headers */,
+				69AC8C82F9942179538B437142238F67 /* STPBankAccount.h in Headers */,
+				F370F07F4355C3D852E9C9FB9BB47889 /* STPBankAccountParams.h in Headers */,
+				B4320EAD077E3AFBFF37FD92D2A70288 /* STPCard.h in Headers */,
+				EEE3CE2EB9EDF8C9C1A3B27F89C1CEFE /* STPCardBrand.h in Headers */,
+				BB22DEBB51CCBF0D5C04195913C763C0 /* STPCardParams.h in Headers */,
+				7593FB5CE79F12481ABF7CA8FC1C2A23 /* STPCardValidationState.h in Headers */,
+				33A794F63AC11A1B33D9B4B7D82C468E /* STPCardValidator.h in Headers */,
+				AF3307EB68079770F00D2D16706A5F2D /* STPCategoryLoader.h in Headers */,
+				03ADF00D404FE2180078BCB2BC7CA497 /* STPCheckoutDelegate.h in Headers */,
+				A46144FFDBA5D2674A6B3BD9EB3AE2EA /* STPCheckoutInternalUIWebViewController.h in Headers */,
+				9734E95A4C7FD9ACA41031D47AC665C5 /* STPCheckoutOptions.h in Headers */,
+				351EE67743AC8C0882374615CE10BCB1 /* STPCheckoutViewController.h in Headers */,
+				78208CAD3D7D34B3AA57092349DE4C55 /* STPCheckoutWebViewAdapter.h in Headers */,
+				AAD2F518F10C6AFC81FB517B19259319 /* STPColorUtils.h in Headers */,
+				62E52FA2EEF511F659AF0835D4043DA2 /* STPFormEncodable.h in Headers */,
+				8CF6882F2F6DC04D787A05A83D45713F /* STPFormEncoder.h in Headers */,
+				31C67FF2F2638D582AB5336C5F1147DB /* STPFormTextField.h in Headers */,
+				794C192754B05884533A35C5C2A8D916 /* STPIOSCheckoutWebViewAdapter.h in Headers */,
+				F2F260D523318BF144C343B9562A2738 /* STPOSXCheckoutWebViewAdapter.h in Headers */,
+				A0C4D261D0FCA0FBA72F91DFC78F6D0C /* STPPaymentCardTextField.h in Headers */,
+				149D726C6E963171F0F39BAA4BD059E4 /* STPPaymentCardTextFieldViewModel.h in Headers */,
+				C5BE93CADE82AD25C9CC4C2F8C1CFFBC /* STPStrictURLProtocol.h in Headers */,
+				031D3FCA93F79711A4FB08FB951A2CC0 /* STPToken.h in Headers */,
+				A1A16496463535FC5A9DED14F138EC5D /* Stripe+ApplePay.h in Headers */,
+				AC8A7C8F72B38FE9ED901408D168432B /* Stripe-umbrella.h in Headers */,
+				DF3ADB89C6A061C6D69C5BCD04AE7E9F /* Stripe.h in Headers */,
+				AED1D72663D8CA8F5E71DC192EC99DD9 /* StripeError.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1452,9 +1496,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE121E9422561F937D6EBB830E109D6D /* Build configuration list for PBXNativeTarget "Stripe" */;
 			buildPhases = (
-				0CC392ED9BF66FAD71ED6EC8EB636C21 /* Sources */,
+				9D089FE69CA13F14F93C5A10F28B2E9D /* Sources */,
 				E68C66861F3B110D7161A821554CD650 /* Frameworks */,
-				026F7276F02CC3936D2008920E5A9989 /* Headers */,
+				4DCBCFA40BE77E0AA7DC04C4DB66F602 /* Headers */,
 				4ACA46B884ED3C9DF17BEA5318894FD0 /* Resources */,
 			);
 			buildRules = (
@@ -1592,35 +1636,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0CC392ED9BF66FAD71ED6EC8EB636C21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF940973F90EA9070DC4435716D6C031 /* PKPayment+Stripe.m in Sources */,
-				E8E73D4BE345BDF6F6705BD34E9D21EA /* STPAPIClient+ApplePay.m in Sources */,
-				E5CFB4BAE56FFFBFE028302DDA76DA02 /* STPAPIClient.m in Sources */,
-				E44A0CE683214E3ED62FC710BA15E169 /* STPAPIConnection.m in Sources */,
-				1BF73BFC5B8EC3C1E3DA3B675F78116B /* STPBankAccount.m in Sources */,
-				7599C6FB05EB2531EB2B2B2D7D8E5406 /* STPCard.m in Sources */,
-				FADF4FCBE1FD1DB9CF88F58CF9DC9128 /* STPCardValidator.m in Sources */,
-				896C2C84BEA238E3F07A92B3F154A664 /* STPCheckoutInternalUIWebViewController.m in Sources */,
-				E6D3FDB056A1E9541F7933FD5D29E2A3 /* STPCheckoutOptions.m in Sources */,
-				F38FE82EDCDC9EDEBCC081F5C3502E64 /* STPCheckoutViewController.m in Sources */,
-				E94AA84905D401C81CC9DA8DC2CEF56F /* STPColorUtils.m in Sources */,
-				34C8BF5E1B4E1EC5AAE0DB9FFAE478AF /* STPFormEncoder.m in Sources */,
-				1542762AB3BF529758DB7E0DAAFBB476 /* STPFormTextField.m in Sources */,
-				6A9E8DF03FB58F47BB0878B62FB1EC5C /* STPIOSCheckoutWebViewAdapter.m in Sources */,
-				63E58283F75E05F5AD09E63FB991A273 /* STPOSXCheckoutWebViewAdapter.m in Sources */,
-				0A7C0E6442B6DC6B12509AF7FC7033E0 /* STPPaymentCardTextField.m in Sources */,
-				533037F27D6C4D30F37F666712DD7577 /* STPPaymentCardTextFieldViewModel.m in Sources */,
-				C72D4BE21FDC636C22BEE78E7E489DC8 /* STPStrictURLProtocol.m in Sources */,
-				E1DABB9F6BBCF9618439DA6B87DD98B0 /* STPToken.m in Sources */,
-				19C4611240868E47F3B0882D13D00D69 /* Stripe+ApplePay.m in Sources */,
-				5204176E58526E7B0451B8546C9DA02E /* Stripe-dummy.m in Sources */,
-				0FAF16EADB0C69638500A8AE691D69C1 /* StripeError.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2743C0FEB5E41500A26AC75D464CEB57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1723,6 +1738,39 @@
 				0EFD1FF643346FF85C83679F659672CA /* Stream.swift in Sources */,
 				E7B226D8BB16471AD63665A794036E44 /* Upload.swift in Sources */,
 				3E9392CB5BD9C0CC47B04EDB40639558 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D089FE69CA13F14F93C5A10F28B2E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBE152F986FCA5E15B1C47A9B0F05E2 /* NSDictionary+Stripe.m in Sources */,
+				1862B82814C59A7DB6D131CD01E37282 /* PKPayment+Stripe.m in Sources */,
+				C19883B4AE516029136F079CD856B054 /* STPAPIClient+ApplePay.m in Sources */,
+				6C8A2C221FDBFC62F9613D584210EB66 /* STPAPIClient.m in Sources */,
+				39DBC24AE76DD71134D7C8A9A608731E /* STPAPIPostRequest.m in Sources */,
+				06C840C839693EEB7AA8489EB4B26943 /* STPBankAccount.m in Sources */,
+				9C8B1CD55CD3044614C73B7EA241FD00 /* STPBankAccountParams.m in Sources */,
+				05D79400A3ABFE0E49545AC97229EC92 /* STPCard.m in Sources */,
+				D221CBEA1927B1E44AB54F764B2D62FE /* STPCardParams.m in Sources */,
+				76C5B0D2802FD913C6E00213D8685E4B /* STPCardValidator.m in Sources */,
+				4B8B6FE14F6F9E1387FB862F6BD40129 /* STPCategoryLoader.m in Sources */,
+				2C6241498C69B0F4750FA91DB6A95528 /* STPCheckoutInternalUIWebViewController.m in Sources */,
+				6618D77F1AE98F3481204F86D38DE9C1 /* STPCheckoutOptions.m in Sources */,
+				941F32AAE89E524327690F60BF5C910A /* STPCheckoutViewController.m in Sources */,
+				7F541319D3CCCAFF715029A18587F95B /* STPColorUtils.m in Sources */,
+				3A04ED91FF25B1031247A7D48C43CA51 /* STPFormEncoder.m in Sources */,
+				CBA006D90C7F38C46FBE788550EE25D6 /* STPFormTextField.m in Sources */,
+				535E408C2FA52A13EA7A52247B6404E6 /* STPIOSCheckoutWebViewAdapter.m in Sources */,
+				D91CE696D0162E2A6E2AA3BF6E07264A /* STPOSXCheckoutWebViewAdapter.m in Sources */,
+				0474FD404374D52F69ADBD5C1081A793 /* STPPaymentCardTextField.m in Sources */,
+				82E99223468E7EFB0922227975830BD9 /* STPPaymentCardTextFieldViewModel.m in Sources */,
+				438528171106237941D48796A2F27D14 /* STPStrictURLProtocol.m in Sources */,
+				4AD251C398EB424367EDA4FFD1C2F305 /* STPToken.m in Sources */,
+				36CE12528DE458B17D37477B26F5849B /* Stripe+ApplePay.m in Sources */,
+				30E05E9C1F53C67502358237C8AD3EE9 /* Stripe-dummy.m in Sources */,
+				EFA847ECE1BC64391E5A3B7C44546A1E /* StripeError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1852,7 +1900,7 @@
 		};
 		3C01B9BCD707AB3531DF9EC8D171C4B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DFF8FB2151042C849556A92F1C679F9 /* Stripe.xcconfig */;
+			baseConfigurationReference = 810805068CBC1534F2D46618C8ADC9C9 /* Stripe.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2082,7 +2130,7 @@
 		};
 		C2EF38CC37DB50EB23ED4595253BFDFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DFF8FB2151042C849556A92F1C679F9 /* Stripe.xcconfig */;
+			baseConfigurationReference = 810805068CBC1534F2D46618C8ADC9C9 /* Stripe.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
