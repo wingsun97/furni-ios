@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         precondition(NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric") != nil, welcome)
 
         // Register Fabric Kits.
-        Fabric.with([Crashlytics.self, Twitter.self, Digits.self, Optimizely.self])
+        Fabric.with([Crashlytics.self, Twitter.self, Digits.self, Optimizely.self, STPAPIClient.self])
 
         // Setup Optimizely.
         Optimizely.startOptimizelyWithAPIToken("Your Optimizely API Token", launchOptions:launchOptions)
