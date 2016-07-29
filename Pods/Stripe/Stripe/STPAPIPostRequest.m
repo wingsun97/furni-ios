@@ -17,35 +17,32 @@
                   endpoint:(NSString *)endpoint
                   postData:(NSData *)postData
                 serializer:(id<STPAPIResponseDecodable>)serializer
-                completion:(void (^)(id<STPAPIResponseDecodable>, NSError *))completion {
-    
+                completion:(STPAPIPostResponseBlock)completion {
+
     NSURL *url = [apiClient.apiURL URLByAppendingPathComponent:endpoint];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     request.HTTPMethod = @"POST";
     request.HTTPBody = postData;
     
-    [[apiClient.urlSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable body, __unused NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[apiClient.urlSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable body, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSDictionary *jsonDictionary = body ? [NSJSONSerialization JSONObjectWithData:body options:0 error:NULL] : nil;
         id<STPAPIResponseDecodable> responseObject = [[serializer class] decodedObjectFromAPIResponse:jsonDictionary];
         NSError *returnedError = [NSError stp_errorFromStripeResponse:jsonDictionary] ?: error;
-        if (!responseObject && !returnedError) {
-            NSDictionary *userInfo = @{
-                                       NSLocalizedDescriptionKey: STPUnexpectedError,
-                                       STPErrorMessageKey: @"The response from Stripe failed to get parsed into valid JSON."
-                                       };
-            returnedError = [[NSError alloc] initWithDomain:StripeDomain code:STPAPIError userInfo:userInfo];
+        if ((!responseObject || ![response isKindOfClass:[NSHTTPURLResponse class]]) && !returnedError) {
+            returnedError = [NSError stp_genericFailedToParseResponseError];
         }
-        // We're using the api client's operation queue instead of relying on the url session's operation queue
-        // because the api client's queue is mutable and may have changed after initialization (not ideal)
-        if (returnedError) {
-            [apiClient.operationQueue addOperationWithBlock:^{
-                completion(nil, returnedError);
-            }];
-            return;
+        
+        NSHTTPURLResponse *httpResponse;
+        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+            httpResponse = (NSHTTPURLResponse *)response;
         }
-        [apiClient.operationQueue addOperationWithBlock:^{
-            completion(responseObject, nil);
-        }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (returnedError) {
+                completion(nil, httpResponse, returnedError);
+            } else {
+                completion(responseObject, httpResponse, nil);
+            }
+        });
     }] resume];
     
 }

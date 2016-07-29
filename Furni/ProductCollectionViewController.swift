@@ -35,13 +35,13 @@ final class ProductCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
 
         // Customize the navigation bar.
-        let shareButton = UIBarButtonItem(title: "Share", style: .Plain, target: self, action: "shareButtonTapped")
+        let shareButton = UIBarButtonItem(title: "Share", style: .Plain, target: self, action: #selector(ProductCollectionViewController.shareButtonTapped))
         navigationItem.rightBarButtonItem = shareButton
         navigationItem.title = collection.name
 
         // Setup the refresh control.
         refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: "fetchCollectionProducts", forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: Selector("fetchCollectionProducts"), forControlEvents: .ValueChanged)
         collectionView!.addSubview(refreshControl)
         collectionView!.sendSubviewToBack(refreshControl)
 

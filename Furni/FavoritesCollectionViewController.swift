@@ -41,7 +41,7 @@ class FavoritesCollectionViewController: UICollectionViewController, UICollectio
 
         // Setup the refresh control.
         refreshControl = UIRefreshControl()
-        refreshControl!.addTarget(self, action: "fetchFavoriteProducts", forControlEvents: .ValueChanged)
+        refreshControl!.addTarget(self, action: #selector(FavoritesCollectionViewController.fetchFavoriteProducts), forControlEvents: .ValueChanged)
         collectionView!.addSubview(refreshControl!)
 
         collectionView!.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: FavoritesCollectionViewController.emptyFooterReusableID)

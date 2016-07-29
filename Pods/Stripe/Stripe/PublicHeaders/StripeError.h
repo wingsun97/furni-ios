@@ -18,7 +18,9 @@ typedef NS_ENUM(NSInteger, STPErrorCode) {
     STPInvalidRequestError = 50, // Your request had invalid parameters.
     STPAPIError = 60,            // General-purpose API error (should be rare).
     STPCardError = 70,           // Something was wrong with the given card (most common).
-    STPCheckoutError = 80,       // Stripe Checkout encountered an error.
+    STPCancellationError = 80,   // The operation was cancelled.
+    STPCheckoutUnknownError = 5000,   // Checkout failed
+    STPCheckoutTooManyAttemptsError = 5001,   // Too many incorrect code attempts
 };
 
 #pragma mark userInfo keys
@@ -67,5 +69,8 @@ FOUNDATION_EXPORT NSString * __nonnull const STPIncorrectCVC;
 @interface NSError(Stripe)
 
 + (nullable NSError *)stp_errorFromStripeResponse:(nullable NSDictionary *)jsonDictionary;
++ (nonnull NSError *)stp_genericFailedToParseResponseError;
+- (BOOL)stp_isUnknownCheckoutError;
+- (BOOL)stp_isURLSessionCancellationError;
 
 @end

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1CB0237A2E80DED5D4985B /* Pods_Furni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3D918D632A1C53D1577DE4 /* Pods_Furni.framework */; };
 		920082EC1B9CA84A00714ECF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920082EB1B9CA84A00714ECF /* SignInViewController.swift */; };
 		920082EE1B9CA89700714ECF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920082ED1B9CA89700714ECF /* Extensions.swift */; };
-		924D66271BCB64DD00067113 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D66261BCB64DD00067113 /* AccountViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		924D66291BCCB06500067113 /* TwitterTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D66281BCCB06500067113 /* TwitterTimelineViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		925061041BB1698C00F5AE23 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925061031BB1698C00F5AE23 /* CartItemCell.swift */; settings = {ASSET_TAGS = (); }; };
-		925061061BB1920400F5AE23 /* CartFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925061051BB1920400F5AE23 /* CartFooterCell.swift */; settings = {ASSET_TAGS = (); }; };
-		926053C81BBDFD1300AC111F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926053C71BBDFD1300AC111F /* User.swift */; settings = {ASSET_TAGS = (); }; };
-		926053CA1BBF84AD00AC111F /* OrderSuccessfulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926053C91BBF84AD00AC111F /* OrderSuccessfulViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9267360B1BC1AF5C00C2DF24 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267360A1BC1AF5C00C2DF24 /* FavoritesCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		924D66271BCB64DD00067113 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D66261BCB64DD00067113 /* AccountViewController.swift */; };
+		924D66291BCCB06500067113 /* TwitterTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D66281BCCB06500067113 /* TwitterTimelineViewController.swift */; };
+		925061041BB1698C00F5AE23 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925061031BB1698C00F5AE23 /* CartItemCell.swift */; };
+		925061061BB1920400F5AE23 /* CartFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925061051BB1920400F5AE23 /* CartFooterCell.swift */; };
+		926053C81BBDFD1300AC111F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926053C71BBDFD1300AC111F /* User.swift */; };
+		926053CA1BBF84AD00AC111F /* OrderSuccessfulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926053C91BBF84AD00AC111F /* OrderSuccessfulViewController.swift */; };
+		9267360B1BC1AF5C00C2DF24 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267360A1BC1AF5C00C2DF24 /* FavoritesCollectionViewController.swift */; };
 		928358D81B8246790088E0B2 /* FurniAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928358D71B8246790088E0B2 /* FurniAPI.swift */; };
 		928EBABC1B80D4A70067F4FB /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928EBABB1B80D4A70067F4FB /* CollectionCell.swift */; };
 		928EBABE1B80DCB10067F4FB /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928EBABD1B80DCB10067F4FB /* ProductCollectionViewController.swift */; };
@@ -27,19 +28,18 @@
 		929C1EAB1B7F8AC70045C970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929C1EA91B7F8AC70045C970 /* Main.storyboard */; };
 		929C1EAD1B7F8AC70045C970 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929C1EAC1B7F8AC70045C970 /* Images.xcassets */; };
 		929C1EBC1B7F8AC70045C970 /* FurniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C1EBB1B7F8AC70045C970 /* FurniTests.swift */; };
-		92A0282A1BC4AE8A00E0B097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A028281BC4AE8A00E0B097 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		92E2B5FE1BC1E83C008E1BC5 /* FriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E2B5FD1BC1E83C008E1BC5 /* FriendHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		92A0282A1BC4AE8A00E0B097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A028281BC4AE8A00E0B097 /* LaunchScreen.storyboard */; };
+		92E2B5FE1BC1E83C008E1BC5 /* FriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E2B5FD1BC1E83C008E1BC5 /* FriendHeaderView.swift */; };
 		92E33A4C1B7FF0D2009A4341 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33A4B1B7FF0D2009A4341 /* Product.swift */; };
 		92E33A4E1B7FF113009A4341 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33A4D1B7FF113009A4341 /* Collection.swift */; };
 		92E33A561B80CA01009A4341 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33A551B80CA01009A4341 /* ProductCell.swift */; };
-		92F31D171BAD19FF00D0651A /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F31D161BAD19FF00D0651A /* CartViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A11D7F8E829673B5E3F991BE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B3827703162ACA962887BB /* Pods.framework */; };
-		BF04286E1BC58BC800CD42ED /* CollectionPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04286D1BC58BC800CD42ED /* CollectionPreviewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		BF0428701BC58C3600CD42ED /* ProductPreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04286F1BC58C3600CD42ED /* ProductPreviewCollectionView.swift */; settings = {ASSET_TAGS = (); }; };
-		BF0428771BC58D7C00CD42ED /* BaseCollectionTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0428761BC58D7C00CD42ED /* BaseCollectionTableViewDataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		BF0428791BC5968F00CD42ED /* ProductPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0428781BC5968F00CD42ED /* ProductPreviewCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		BF50ED9C1BC7394A00776DD4 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50ED9B1BC7394A00776DD4 /* AccountManager.swift */; settings = {ASSET_TAGS = (); }; };
-		BFBA530F1BCEF9FC0053BF6B /* FriendFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBA530E1BCEF9FC0053BF6B /* FriendFooterView.swift */; settings = {ASSET_TAGS = (); }; };
+		92F31D171BAD19FF00D0651A /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F31D161BAD19FF00D0651A /* CartViewController.swift */; };
+		BF04286E1BC58BC800CD42ED /* CollectionPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04286D1BC58BC800CD42ED /* CollectionPreviewCell.swift */; };
+		BF0428701BC58C3600CD42ED /* ProductPreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04286F1BC58C3600CD42ED /* ProductPreviewCollectionView.swift */; };
+		BF0428771BC58D7C00CD42ED /* BaseCollectionTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0428761BC58D7C00CD42ED /* BaseCollectionTableViewDataSource.swift */; };
+		BF0428791BC5968F00CD42ED /* ProductPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0428781BC5968F00CD42ED /* ProductPreviewCollectionViewCell.swift */; };
+		BF50ED9C1BC7394A00776DD4 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50ED9B1BC7394A00776DD4 /* AccountManager.swift */; };
+		BFBA530F1BCEF9FC0053BF6B /* FriendFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBA530E1BCEF9FC0053BF6B /* FriendFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		670317E0C32BC9016042C051 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7C3D918D632A1C53D1577DE4 /* Pods_Furni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Furni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D33F4B21BD4458B00D4829D /* Furni.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Furni.entitlements; sourceTree = "<group>"; };
 		7DF0D0A91BD3235A0019165B /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Appfile; sourceTree = "<group>"; };
 		7DF0D0AA1BD3235A0019165B /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Fastfile; sourceTree = "<group>"; };
@@ -89,13 +89,14 @@
 		92E33A4D1B7FF113009A4341 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		92E33A551B80CA01009A4341 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		92F31D161BAD19FF00D0651A /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
-		B85640BADF056643B64219A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B71C9649CF2BE271F046BA90 /* Pods-Furni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Furni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Furni/Pods-Furni.release.xcconfig"; sourceTree = "<group>"; };
 		BF04286D1BC58BC800CD42ED /* CollectionPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPreviewCell.swift; sourceTree = "<group>"; };
 		BF04286F1BC58C3600CD42ED /* ProductPreviewCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPreviewCollectionView.swift; sourceTree = "<group>"; };
 		BF0428761BC58D7C00CD42ED /* BaseCollectionTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionTableViewDataSource.swift; sourceTree = "<group>"; };
 		BF0428781BC5968F00CD42ED /* ProductPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPreviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF50ED9B1BC7394A00776DD4 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		BFBA530E1BCEF9FC0053BF6B /* FriendFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendFooterView.swift; sourceTree = "<group>"; };
+		D8E0EA6226FBB7980CE8564A /* Pods-Furni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Furni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Furni/Pods-Furni.debug.xcconfig"; sourceTree = "<group>"; };
 		E7B3827703162ACA962887BB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11D7F8E829673B5E3F991BE /* Pods.framework in Frameworks */,
+				3C1CB0237A2E80DED5D4985B /* Pods_Furni.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +119,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		267FE4DEE9FDE7D20CB6C48A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0EA6226FBB7980CE8564A /* Pods-Furni.debug.xcconfig */,
+				B71C9649CF2BE271F046BA90 /* Pods-Furni.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5C5F6D89A92D3A74D4027440 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E7B3827703162ACA962887BB /* Pods.framework */,
+				7C3D918D632A1C53D1577DE4 /* Pods_Furni.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,8 +155,8 @@
 				929C1EB81B7F8AC70045C970 /* FurniTests */,
 				929C1EA11B7F8AC70045C970 /* Products */,
 				5C5F6D89A92D3A74D4027440 /* Frameworks */,
-				AD47695B5882B90E4FFAEE18 /* Pods */,
 				7DF0D0AD1BD3235A0019165B /* fastlane */,
+				267FE4DEE9FDE7D20CB6C48A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,15 +258,6 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		AD47695B5882B90E4FFAEE18 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				670317E0C32BC9016042C051 /* Pods.debug.xcconfig */,
-				B85640BADF056643B64219A7 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,12 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 929C1EBF1B7F8AC70045C970 /* Build configuration list for PBXNativeTarget "Furni" */;
 			buildPhases = (
-				1B6D1B76838BF77356C67A0C /* Check Pods Manifest.lock */,
+				BC95D66EEB43E54F19FB73E4 /* [CP] Check Pods Manifest.lock */,
 				929C1E9C1B7F8AC70045C970 /* Sources */,
 				929C1E9D1B7F8AC70045C970 /* Frameworks */,
 				929C1E9E1B7F8AC70045C970 /* Resources */,
-				0DBA32B4E4D37444F225142E /* Embed Pods Frameworks */,
-				B8D5877672851B16C82B2AEC /* Copy Pods Resources */,
+				63309F9591F6768389A28671 /* [CP] Embed Pods Frameworks */,
+				A327470B22FECB76300FEA0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,49 +365,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DBA32B4E4D37444F225142E /* Embed Pods Frameworks */ = {
+		63309F9591F6768389A28671 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Furni/Pods-Furni-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1B6D1B76838BF77356C67A0C /* Check Pods Manifest.lock */ = {
+		A327470B22FECB76300FEA0B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Furni/Pods-Furni-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC95D66EEB43E54F19FB73E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B8D5877672851B16C82B2AEC /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -570,7 +572,7 @@
 		};
 		929C1EC01B7F8AC70045C970 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 670317E0C32BC9016042C051 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D8E0EA6226FBB7980CE8564A /* Pods-Furni.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Furni/Furni.entitlements;
@@ -593,7 +595,7 @@
 		};
 		929C1EC11B7F8AC70045C970 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85640BADF056643B64219A7 /* Pods.release.xcconfig */;
+			baseConfigurationReference = B71C9649CF2BE271F046BA90 /* Pods-Furni.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Furni/Furni.entitlements;

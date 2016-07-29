@@ -212,7 +212,11 @@ final class AccountManager {
     }
 
     private func restoreSessions() {
-        self.twitterIdentity = Twitter.sharedInstance().session()
+        
+        if let session = Twitter.sharedInstance().sessionStore.session() {
+            self.twitterIdentity = session as? TWTRSession
+        }
+        
         self.digitsIdentity = Digits.sharedInstance().session()
     }
 

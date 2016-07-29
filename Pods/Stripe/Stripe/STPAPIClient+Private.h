@@ -8,11 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface STPAPIClient ()<NSURLSessionDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-- (void)createTokenWithData:(nonnull NSData *)data completion:(nullable STPTokenCompletionBlock)completion;
+@interface STPAPIClient()
 
-@property (nonatomic, readwrite, nonnull) NSURL *apiURL;
-@property (nonatomic, readwrite, nonnull) NSURLSession *urlSession;
+- (instancetype)initWithPublishableKey:(NSString *)publishableKey
+                               baseURL:(NSString *)baseURL;
+
+- (void)createTokenWithData:(NSData *)data
+                 completion:(STPTokenCompletionBlock)completion;
+
+@property (nonatomic, readwrite) NSURL *apiURL;
+@property (nonatomic, readwrite) NSURLSession *urlSession;
 
 @end
+
+NS_ASSUME_NONNULL_END

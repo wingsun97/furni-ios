@@ -12,6 +12,16 @@
 
 @implementation STPCardParams
 
+@synthesize additionalAPIParameters = _additionalAPIParameters;
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _additionalAPIParameters = @{};
+    }
+    return self;
+}
+
 - (NSString *)last4 {
     if (self.number && self.number.length >= 4) {
         return [self.number substringFromIndex:(self.number.length - 4)];
@@ -19,6 +29,32 @@
         return nil;
     }
 }
+
+#if TARGET_OS_IPHONE
+
+- (STPAddress *)address {
+    STPAddress *address = [STPAddress new];
+    address.name = self.name;
+    address.line1 = self.addressLine1;
+    address.line2 = self.addressLine2;
+    address.city = self.addressCity;
+    address.state = self.addressState;
+    address.postalCode = self.addressZip;
+    address.country = self.addressCountry;
+    return address;
+}
+
+- (void)setAddress:(STPAddress *)address {
+    self.name = address.name;
+    self.addressLine1 = address.line1;
+    self.addressLine2 = address.line2;
+    self.addressCity = address.city;
+    self.addressState = address.state;
+    self.addressZip = address.postalCode;
+    self.addressCountry = address.country;
+}
+
+#endif
 
 - (BOOL)validateNumber:(id *)ioValue error:(NSError **)outError {
     if (*ioValue == nil) {
@@ -74,8 +110,8 @@
 - (BOOL)validateCardReturningError:(NSError **)outError {
     // Order matters here
     NSString *numberRef = [self number];
-    NSString *expMonthRef = [NSString stringWithFormat:@"%lu", (unsigned long)[self expMonth]];
-    NSString *expYearRef = [NSString stringWithFormat:@"%lu", (unsigned long)[self expYear]];
+    NSString *expMonthRef = [NSString stringWithFormat:@"%02lu", (unsigned long)[self expMonth]];
+    NSString *expYearRef = [NSString stringWithFormat:@"%02lu", (unsigned long)[self expYear]];
     NSString *cvcRef = [self cvc];
     
     // Make sure expMonth, expYear, and number are set.  Validate CVC if it is provided

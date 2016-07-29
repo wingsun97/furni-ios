@@ -68,7 +68,7 @@ final class StoreViewController: UIViewController, UITableViewDelegate {
 
         // Setup the refresh control.
         tableView.addSubview(refreshControl)
-        refreshControl.addTarget(self, action: Selector("fetchCollections"), forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: #selector(StoreViewController.fetchCollections), forControlEvents: .ValueChanged)
 
         // Fetch collections from the API.
         fetchCollections()

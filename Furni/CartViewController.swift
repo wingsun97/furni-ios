@@ -46,7 +46,7 @@ final class CartViewController: UITableViewController, PKPaymentAuthorizationVie
         super.awakeFromNib()
 
         // Listen to notifications about the cart being updated.
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("cartUpdatedNotificationReceived"), name: Cart.cartUpdatedNotificationName, object: self.cart)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(CartViewController.cartUpdatedNotificationReceived), name: Cart.cartUpdatedNotificationName, object: self.cart)
     }
 
     // Order price in cents.

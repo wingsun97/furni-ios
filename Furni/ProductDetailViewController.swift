@@ -94,7 +94,7 @@ final class ProductDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Customize the navigation bar.
-        let shareButton = UIBarButtonItem(title: "Share", style: .Plain, target: self, action: "shareButtonTapped")
+        let shareButton = UIBarButtonItem(title: "Share", style: .Plain, target: self, action: #selector(ProductDetailViewController.shareButtonTapped))
         navigationItem.rightBarButtonItem = shareButton
         navigationItem.title = "Details"
 
