@@ -13,8 +13,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+/**
+ An `STPPaymentConfiguration` represents all the options you can set or change
+ around a payment. 
+ 
+ You provide an `STPPaymentConfiguration` object to your `STPPaymentContext` 
+ when making a charge. The configuration generally has settings that
+ will not change from payment to payment and thus is reusable, while the context 
+ is specific to a single particular payment instance.
+ */
 @interface STPPaymentConfiguration : NSObject<NSCopying>
 
+/**
+ This is a convenience singleton configuration that uses the default values
+ for every property
+ */
 + (instancetype)sharedConfiguration;
 
 /**
@@ -38,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)NSString *companyName;
 
 /**
- *  The Apple Merchant Identifier to use during Apple Pay transactions. To create one of these, see our guide at https://stripe.com/docs/mobile/applepay . You must set this to a valid identifier in order to automatically enable Apple Pay.
+ *  The Apple Merchant Identifier to use during Apple Pay transactions. To create one of these, see our guide at https://stripe.com/docs/mobile/apple-pay . You must set this to a valid identifier in order to automatically enable Apple Pay.
  */
 @property(nonatomic, nullable, copy)NSString *appleMerchantIdentifier;
 
