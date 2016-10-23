@@ -1,6 +1,6 @@
 // UIImage+AlamofireImage.swift
 //
-// Copyright (c) 2015 Alamofire Software Foundation (http://alamofire.org/)
+// Copyright (c) 2015-2016 Alamofire Software Foundation (http://alamofire.org/)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@ import CoreGraphics
 import Foundation
 import UIKit
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 import CoreImage
 #endif
 
@@ -36,8 +36,8 @@ extension UIImage {
     /**
         Initializes and returns the image object with the specified data in a thread-safe manner.
 
-        It has been reported that there are thread-safety issues when initializing large amounts of images 
-        simultaneously. In the event of these issues occurring, this method can be used in place of 
+        It has been reported that there are thread-safety issues when initializing large amounts of images
+        simultaneously. In the event of these issues occurring, this method can be used in place of
         the `init?(data:)` method.
 
         - parameter data: The data object containing the image data.
@@ -60,8 +60,8 @@ extension UIImage {
         the `init?(data:scale:)` method.
 
         - parameter data:  The data object containing the image data.
-        - parameter scale: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0 
-                           results in an image whose size matches the pixel-based dimensions of the image. Applying a 
+        - parameter scale: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0
+                           results in an image whose size matches the pixel-based dimensions of the image. Applying a
                            different scale factor changes the size of the image as reported by the size property.
 
         - returns: An initialized `UIImage` object, or `nil` if the method failed.
@@ -106,8 +106,38 @@ extension UIImage {
         guard !af_inflated else { return }
 
         af_inflated = true
-        CGDataProviderCopyData(CGImageGetDataProvider(CGImage))
+
+        #if swift(>=2.3)
+            guard let cgImage = CGImage, let dataProvider = CGImageGetDataProvider(cgImage) else { return }
+            CGDataProviderCopyData(dataProvider)
+        #else
+            CGDataProviderCopyData(CGImageGetDataProvider(CGImage))
+        #endif
     }
+}
+
+// MARK: - Alpha
+
+extension UIImage {
+    /// Returns whether the image contains an alpha component.
+    public var af_containsAlphaComponent: Bool {
+        #if swift(>=2.3)
+            guard let cgImage = CGImage else { return false }
+            let alphaInfo = CGImageGetAlphaInfo(cgImage)
+        #else
+            let alphaInfo = CGImageGetAlphaInfo(CGImage)
+        #endif
+
+        return (
+            alphaInfo == .First ||
+            alphaInfo == .Last ||
+            alphaInfo == .PremultipliedFirst ||
+            alphaInfo == .PremultipliedLast
+        )
+    }
+
+    /// Returns whether the image is opaque.
+    public var af_isOpaque: Bool { return !af_containsAlphaComponent }
 }
 
 // MARK: - Scaling
@@ -121,18 +151,23 @@ extension UIImage {
         - returns: A new image object.
     */
     public func af_imageScaledToSize(size: CGSize) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, af_isOpaque, 0.0)
         drawInRect(CGRect(origin: CGPointZero, size: size))
 
-        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContextUnwrapped()
         UIGraphicsEndImageContext()
 
         return scaledImage
     }
 
     /**
-        Returns a new version of the image scaled from the center while maintaining the aspect ratio to fit within 
+        Returns a new version of the image scaled from the center while maintaining the aspect ratio to fit within
         a specified size.
+
+        The resulting image contains an alpha component used to pad the width or height with the necessary transparent
+        pixels to fit the specified size. In high performance critical situations, this may not be the optimal approach.
+        To maintain an opaque image, you could compute the `scaledSize` manually, then use the `af_imageScaledToSize`
+        method in conjunction with a `.Center` content mode to achieve the same visual result.
 
         - parameter size: The size to use when scaling the new image.
 
@@ -156,7 +191,7 @@ extension UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         drawInRect(CGRect(origin: origin, size: scaledSize))
 
-        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContextUnwrapped()
         UIGraphicsEndImageContext()
 
         return scaledImage
@@ -185,10 +220,10 @@ extension UIImage {
         let scaledSize = CGSize(width: self.size.width * resizeFactor, height: self.size.height * resizeFactor)
         let origin = CGPoint(x: (size.width - scaledSize.width) / 2.0, y: (size.height - scaledSize.height) / 2.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, af_isOpaque, 0.0)
         drawInRect(CGRect(origin: origin, size: scaledSize))
 
-        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContextUnwrapped()
         UIGraphicsEndImageContext()
 
         return scaledImage
@@ -202,10 +237,10 @@ extension UIImage {
         Returns a new version of the image with the corners rounded to the specified radius.
 
         - parameter radius:                   The radius to use when rounding the new image.
-        - parameter divideRadiusByImageScale: Whether to divide the radius by the image scale. Set to `true` when the 
-                                              image has the same resolution for all screen scales such as @1x, @2x and 
-                                              @3x (i.e. single image from web server). Set to `false` for images loaded 
-                                              from an asset catalog with varying resolutions for each screen scale. 
+        - parameter divideRadiusByImageScale: Whether to divide the radius by the image scale. Set to `true` when the
+                                              image has the same resolution for all screen scales such as @1x, @2x and
+                                              @3x (i.e. single image from web server). Set to `false` for images loaded
+                                              from an asset catalog with varying resolutions for each screen scale.
                                               `false` by default.
 
         - returns: A new image object.
@@ -220,7 +255,7 @@ extension UIImage {
 
         drawInRect(CGRect(origin: CGPointZero, size: size))
 
-        let roundedImage = UIGraphicsGetImageFromCurrentImageContext()
+        let roundedImage = UIGraphicsGetImageFromCurrentImageContextUnwrapped()
         UIGraphicsEndImageContext()
 
         return roundedImage
@@ -252,14 +287,14 @@ extension UIImage {
 
         squareImage.drawInRect(CGRect(origin: CGPointZero, size: squareImage.size))
 
-        let roundedImage = UIGraphicsGetImageFromCurrentImageContext()
+        let roundedImage = UIGraphicsGetImageFromCurrentImageContextUnwrapped()
         UIGraphicsEndImageContext()
 
         return roundedImage
     }
 }
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 
 // MARK: - Core Image Filters
 
@@ -292,10 +327,25 @@ extension UIImage {
         guard let filter = CIFilter(name: filterName, withInputParameters: parameters) else { return nil }
         guard let outputImage = filter.outputImage else { return nil }
 
-        let cgImageRef = context.createCGImage(outputImage, fromRect: coreImage.extent)
+        let cgImageRef = context.createCGImage(outputImage, fromRect: outputImage.extent)
 
-        return UIImage(CGImage: cgImageRef, scale: scale, orientation: imageOrientation)
+        #if swift(>=2.3)
+            guard let cgImage = cgImageRef else { return nil }
+            return UIImage(CGImage: cgImage, scale: scale, orientation: imageOrientation)
+        #else
+            return UIImage(CGImage: cgImageRef, scale: scale, orientation: imageOrientation)
+        #endif
     }
 }
 
 #endif
+
+// MARK: - Private - Graphics Context Helpers
+
+private func UIGraphicsGetImageFromCurrentImageContextUnwrapped() -> UIImage {
+    #if swift(>=2.3)
+        return UIGraphicsGetImageFromCurrentImageContext()!
+    #else
+        return UIGraphicsGetImageFromCurrentImageContext()
+    #endif
+}

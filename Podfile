@@ -13,7 +13,7 @@ pod 'Crashlytics'
 pod 'Digits'
 pod 'TwitterKit'
 pod 'TwitterCore'
-pod 'Alamofire', '~> 2.0'
-pod 'AlamofireImage', '~> 1.0'
+pod 'Alamofire'
+pod 'AlamofireImage'
 
 end

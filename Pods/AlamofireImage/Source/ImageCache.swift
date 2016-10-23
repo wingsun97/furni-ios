@@ -1,6 +1,6 @@
 // ImageCache.swift
 //
-// Copyright (c) 2015 Alamofire Software Foundation (http://alamofire.org/)
+// Copyright (c) 2015-2016 Alamofire Software Foundation (http://alamofire.org/)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@
 import Alamofire
 import Foundation
 
-#if os(iOS) || os(watchOS)
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 #elseif os(OSX)
 import Cocoa
@@ -61,9 +61,9 @@ public protocol ImageRequestCache: ImageCache {
 
 // MARK: -
 
-/// The `AutoPurgingImageCache` in an in-memory image cache used to store images up to a given memory capacity. When 
-/// the memory capacity is reached, the image cache is sorted by last access date, then the oldest image is continuously 
-/// purged until the preferred memory usage after purge is met. Each time an image is accessed through the cache, the 
+/// The `AutoPurgingImageCache` in an in-memory image cache used to store images up to a given memory capacity. When
+/// the memory capacity is reached, the image cache is sorted by last access date, then the oldest image is continuously
+/// purged until the preferred memory usage after purge is met. Each time an image is accessed through the cache, the
 /// internal access date of the image is updated.
 public class AutoPurgingImageCache: ImageRequestCache {
     private class CachedImage {
@@ -78,7 +78,7 @@ public class AutoPurgingImageCache: ImageRequestCache {
             self.lastAccessDate = NSDate()
 
             self.totalBytes = {
-                #if os(iOS) || os(watchOS)
+                #if os(iOS) || os(tvOS) || os(watchOS)
                     let size = CGSize(width: image.size.width * image.scale, height: image.size.height * image.scale)
                 #elseif os(OSX)
                     let size = CGSize(width: image.size.width, height: image.size.height)
@@ -111,7 +111,7 @@ public class AutoPurgingImageCache: ImageRequestCache {
     /// The total memory capacity of the cache in bytes.
     public let memoryCapacity: UInt64
 
-    /// The preferred memory usage after purge in bytes. During a purge, images will be purged until the memory 
+    /// The preferred memory usage after purge in bytes. During a purge, images will be purged until the memory
     /// capacity drops below this limit.
     public let preferredMemoryUsageAfterPurge: UInt64
 
@@ -122,30 +122,37 @@ public class AutoPurgingImageCache: ImageRequestCache {
     // MARK: Initialization
 
     /**
-        Initialies the `AutoPurgingImageCache` instance with the given memory capacity and preferred memory usage 
+        Initialies the `AutoPurgingImageCache` instance with the given memory capacity and preferred memory usage
         after purge limit.
+
+        Please note, the memory capacity must always be greater than or equal to the preferred memory usage after purge.
 
         - parameter memoryCapacity:                 The total memory capacity of the cache in bytes. `100 MB` by default.
         - parameter preferredMemoryUsageAfterPurge: The preferred memory usage after purge in bytes. `60 MB` by default.
 
         - returns: The new `AutoPurgingImageCache` instance.
     */
-    public init(memoryCapacity: UInt64 = 100 * 1024 * 1024, preferredMemoryUsageAfterPurge: UInt64 = 60 * 1024 * 1024) {
+    public init(memoryCapacity: UInt64 = 100_000_000, preferredMemoryUsageAfterPurge: UInt64 = 60_000_000) {
         self.memoryCapacity = memoryCapacity
         self.preferredMemoryUsageAfterPurge = preferredMemoryUsageAfterPurge
+
+        precondition(
+            memoryCapacity >= preferredMemoryUsageAfterPurge,
+            "The `memoryCapacity` must be greater than or equal to `preferredMemoryUsageAfterPurge`"
+        )
 
         self.cachedImages = [:]
         self.currentMemoryUsage = 0
 
         self.synchronizationQueue = {
-            let name = String(format: "com.alamofire.autopurgingimagecache-%08%08", arc4random(), arc4random())
+            let name = String(format: "com.alamofire.autopurgingimagecache-%08x%08x", arc4random(), arc4random())
             return dispatch_queue_create(name, DISPATCH_QUEUE_CONCURRENT)
         }()
 
-        #if os(iOS)
+        #if os(iOS) || os(tvOS)
             NSNotificationCenter.defaultCenter().addObserver(
                 self,
-                selector: "removeAllImages",
+                selector: #selector(AutoPurgingImageCache.removeAllImages),
                 name: UIApplicationDidReceiveMemoryWarningNotification,
                 object: nil
             )
