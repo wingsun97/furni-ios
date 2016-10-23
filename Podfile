@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
 
@@ -13,7 +13,7 @@ pod 'Crashlytics'
 pod 'Digits'
 pod 'TwitterKit'
 pod 'TwitterCore'
-pod 'Alamofire'
-pod 'AlamofireImage'
+pod 'Alamofire', '~> 4.0'
+pod 'AlamofireImage', '~> 3.1'
 
 end
